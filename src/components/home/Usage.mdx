@@ -1,0 +1,43 @@
+import "../shared/styles/code.scss";
+import "../shared/styles/Mdx.scss";
+
+# Installation
+
+Using a CDN
+
+```html
+<script
+  crossorigin
+  src="https://unpkg.com/orbiton@latest/umd/orbiton.production.js"
+></script>
+```
+
+Using `NPM` or `yarn`
+
+```bash
+# yarn
+yarn add orbiton
+
+# npm
+npm install orbiton
+```
+
+# Usage
+
+Try it on [Codesandbox]()
+
+```js
+import Orbiton from "orbiton";
+
+const Button = (
+  <button
+    onClick={() => {
+      alert("Clicked");
+    }}
+  >
+    Click me
+  </button>
+);
+
+Orbiton.append(Button, document.getElementById("root"));
+```

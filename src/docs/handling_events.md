@@ -30,7 +30,7 @@ Orbiton.createElement(
   }
 )
 ```
-
+> **Note:** Writing events is JavaScript and JSX is different. If you are adding forexample the cjlick event, In JSX you would have to write `onClick` but for vanilla JS when using the `createElement` function you just write `click`
 
 ### Passing Arguments to Event Handlers
 Inside a loop, it is common to want to pass an extra parameter to an event handler. For example, if id is the row ID, either of the following would work:

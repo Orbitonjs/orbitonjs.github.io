@@ -1,23 +1,47 @@
-import Orbiton from "orbiton"
-import About from "../components/index/About"
-import Footer from "../components/index/Footer"
-import Header from "../components/index/Header"
-import NavBar from "../components/index/Navbar"
-import { Actions } from "../components/index/sponsor"
+import Orbiton, { Component } from "orbiton"
 import Head from "../components/shared/head"
+import NavBar from "../components/home/NavBar.jsx"
+import { Header } from "../components/home/Header.jsx"
+import { Docs } from "../components/home/Docs.jsx"
+import { Usage } from "../components/home/Why.jsx"
+import { Connect } from "../components/home/Connect.jsx"
+import Footer from "../components/index/Footer"
+import "../components/shared/styles/global.scss"
 
-const App = <div>
-  <Head title="Orbiton JS | A light weight Javascript Library for creating UIs" />
-  <NavBar />
-  <Header />
-  <About />
-  <Actions />
-  <Footer />
-</div>
 
+
+class App extends Component {
+  constructor(props, context) {
+    super(props, context)
+    this.state = {
+      darkTheme: false
+    }
+    this.toggleTheme = this.toggleTheme.bind(this)
+  }
+  toggleTheme() {
+    this.updateState({
+      darkTheme: !this.state.darkTheme
+    })
+  }
+  render() {
+    const { darkTheme } = this.state
+    return (
+      <div:Head
+        props={{
+          title: "Orbiton JS | A light weight Javascript Library for creating UIs"
+        }}
+      >
+        <NavBar toggleTheme={this.toggleTheme} />
+        <Header />
+        <Docs />
+        <Usage />
+        <Connect />
+        <Footer />
+      </div:Head>
+    )
+  }
+}
 const root = document.createElement("div")
+root.setAttribute("id", "app-root")
 document.body.appendChild(root)
-const start = new Date();
 Orbiton.append(<div><App /></div>, root)
-const end = new Date();
-console.log(start.getTime() - end.getTime())

@@ -1,12 +1,12 @@
-import { resolve, dirname } from 'path';
+import { resolve, dirname, relative } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyPlugin from "copy-webpack-plugin";
 import fs from 'fs';
-import { pages } from "./project.config.mjs";
 import ImageMinimizerPlugin from "image-minimizer-webpack-plugin";
 import remarkGfm from 'remark-gfm'
 import remarkToc from 'remark-toc'
 import rehypeHighlight from 'rehype-highlight'
+import { getPages } from './utils.mjs'
 
 const renderer = `
 import Orbiton from 'orbiton';
@@ -15,22 +15,22 @@ import jsx from 'orbiton/jsx-runtime';
 `
 
 const entry = {}
-
+const pages = getPages('./src/pages')
+const HTMLPages = []
 pages.map((page) => {
-  entry[page] = `./src/pages/${page}.js`;
+  const pageNameWithExt = relative("./src/pages", page)
+  const pageName = pageNameWithExt.slice(0, pageNameWithExt.length - 3)
+  HTMLPages.push(pageName)
+  entry[pageName] = `./${page}`;
 })
 
-export default {
+
+export const config = {
   entry,
   output: {
     filename: '[name].js',
     path: resolve(dirname('.'), 'build'),
     clean: true,
-  },
-  mode: "development",
-  devServer: {
-    static: './static/public',
-    https: true,
   },
   module: {
     rules: [
@@ -103,7 +103,7 @@ export default {
       },
     }), */
   ].concat(
-    pages.map(
+    HTMLPages.map(
       (page) =>
         new HtmlWebpackPlugin({
           inject: true,
@@ -113,4 +113,4 @@ export default {
         })
     ),
   ),
-};
+}

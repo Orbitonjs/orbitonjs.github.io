@@ -1,0 +1,326 @@
+@import "../../shared/styles/mixins.scss";
+
+.navbar {
+  position: sticky;
+  top: 0;
+  transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  z-index: 1100;
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0px -1px 1px #eaeef3;
+  background-color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.753);
+}
+.navitems {
+  padding: 10px 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.imglogo {
+  width: 32px;
+  height: 32px;
+}
+
+.menu {
+  @include tablet {
+    display: none;
+  }
+  padding-left: 1.7rem;
+  & > .menugroup {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ltext {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.menuitem {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #46505a;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  border-radius: 10px;
+  &:hover {
+    color: blue;
+    background-color: #f3f6f9;
+  }
+}
+.heading {
+  @include mobile {
+    display: none;
+  }
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0 0.3rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #0000ff, #000080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+.logo {
+  padding: 0;
+}
+
+.icons {
+  display: flex;
+  margin-left: auto;
+}
+.github {
+  svg {
+    width: 25px;
+    color: blue;
+    height: 25px;
+  }
+}
+
+.searchicon {
+  svg {
+    width: 20px;
+    height: 20px;
+    padding: 0.3rem 0.7rem 0.3rem 0.5rem;
+    color: #0000ff;
+  }
+}
+.searchbar {
+  @include mobile {
+    display: none;
+  }
+  padding: 0 0.5rem;
+  margin-left: auto;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(243, 246, 249);
+  border: 1px solid rgb(229, 232, 236);
+  -webkit-box-align: center;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  align-items: center;
+  min-width: 210px;
+}
+
+.side {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.skeyshort {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: rgb(70, 80, 90);
+  line-height: 21px;
+  border: 1px solid rgb(229, 232, 236);
+  background-color: rgb(255, 255, 255);
+  padding: 0px 7px;
+  right: 10px;
+  height: 23px;
+  top: calc(50% - 11px);
+  border-radius: 5px;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  pointer-events: none;
+  margin-left: auto;
+}
+
+.falseinput {
+  display: flex;
+  align-items: center;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.github {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0.5rem;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  overflow: visible;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #0000ff;
+  border-radius: 10px;
+  padding: 6.5px;
+  border: 1px solid rgb(229, 232, 236);
+  background-color: transparent;
+  svg {
+    font-size: 1.125rem;
+  }
+}
+
+.docs-menu-item {
+  position: relative;
+  cursor: default;
+  &:hover {
+    .popup {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.popup {
+  transform: scaleY(0);
+  transition: all 0.2s ease-out;
+  position: absolute;
+  top: 100%;
+  border: 1px solid rgb(229, 232, 236);
+  left: 0px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+  color: #46505a;
+}
+
+.docsicon {
+  padding: 0 1rem;
+  svg {
+    color: #0000ff;
+    width: 25px;
+    height: 25px;
+  }
+}
+.popupitem {
+  h4 {
+    margin: 0;
+  }
+  padding: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  &:hover {
+    background-color: #f3f6f9;
+  }
+  align-items: center;
+}
+
+.hr {
+  margin: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-style: solid;
+  border-bottom-width: thin;
+  border-color: #eaeef3;
+  margin-top: 9.6px;
+  margin-bottom: 9.6px;
+}
+
+.menuicon {
+  position: relative;
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobilepopup {
+  transform: scaleY(1);
+  transition: all 0.2s ease-out;
+  position: absolute;
+  top: 100%;
+  font-size: 0.9rem;
+  border: 1px solid rgb(229, 232, 236);
+  right: 0px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+  color: #46505a;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@include darkTheme {
+  .navbar {
+    box-shadow: rgb(19 47 76) 0px -1px 1px inset;
+    background-color: rgba(10, 25, 41, 0.72);
+  }
+  .github {
+    border: 1px solid rgb(30, 73, 118);
+    color: white;
+    svg {
+      color: #f3f6f9;
+    }
+  }
+  .searchbar {
+    border: 1px solid rgb(30, 73, 118);
+    background-color: rgb(0, 30, 60);
+    color: whitesmoke;
+  }
+  .skeyshort {
+    color: whitesmoke;
+    border: 1px solid rgb(30, 73, 118);
+    background-color: rgb(0, 30, 60);
+  }
+  .popup,
+  .mobilepopup {
+    background-color: rgb(10, 25, 41);
+    border: 1px solid rgb(30, 73, 118);
+    color: whitesmoke;
+  }
+  .hr {
+    border-color: rgb(30, 73, 118);
+  }
+  .popupitem {
+    &:hover {
+      background-color: rgb(30, 73, 118);
+    }
+  }
+  .menuitem {
+    color: #c8c9ca;
+    &:hover {
+      color: #c2c3c5;
+      background-color: rgb(30, 73, 118);
+    }
+  }
+  .heading {
+    font-weight: 900;
+    background: linear-gradient(to right, aqua, #0000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+  .searchicon {
+    svg {
+      color: white;
+    }
+  }
+}

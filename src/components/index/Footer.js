@@ -7,8 +7,10 @@ export default class Footer extends Component {
   }
 
   render() {
+    const date = new Date()
     return (
       <footer>
+        <p><span>Please Show your love and <a href="https://www.twitter.com/jimjuniorb">SPONSOR</a> this projet to keep its development progressing.</span></p>
         <div className={styles.footer}>
           <ul>
             <li><a href="/">Home</a></li>
@@ -29,6 +31,7 @@ export default class Footer extends Component {
             <li><a href="/">API</a></li>
           </ul>
         </div>
+        <p>Copyright © {date.getFullYear()} <a href="https://www.twitter.com/jimjuniorb">Beingana Jim Junior</a>.</p>
       </footer>
     )
   }

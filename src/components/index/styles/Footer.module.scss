@@ -1,29 +1,52 @@
 @import "../../shared/styles/mixins.scss";
 
 footer {
-  background: #00051fb0;
-  margin-top: 1rem;
+  margin: 0;
+  background: linear-gradient(to bottom, #133f4c, #132f4c);
+  p {
+    margin: 0;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    span {
+      font-size: 1rem;
+      text-transform: capitalize;
+      text-shadow: #3738387a 1px 1px 9px, #3738387a 1px -1px 9px;
+    }
+
+    a {
+      font-weight: bold;
+      background: linear-gradient(to right, aqua, #007fff);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 .footer {
+  max-width: 1400px;
   display: flex;
+  margin: 0 auto;
 
   ul {
     flex: 1;
     list-style: none;
     li {
-      padding: .4rem;
+      padding: 0.4rem;
       a {
         color: #ffffff;
         text-decoration: none;
         &:hover {
-          color: #b9b9b9;
+          color: #02e2ff;
+          text-decoration: underline;
         }
       }
     }
   }
 }
 @include mobile {
-    .footer {
-      flex-direction: column;
-    }
+  .footer {
+    flex-direction: column;
   }
+}
