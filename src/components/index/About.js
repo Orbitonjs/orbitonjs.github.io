@@ -21,7 +21,7 @@ export default class About extends Component {
             </div>
             <div>
               <h3>Close to the DOM</h3>
-              <p>Orbiton JS utilizes the virtual dom but still ensures to stay close to the DOM in order for functions to be run faster and create faster apps with better perfomance</p>
+              <p>Orbiton JS utilizes the virtual dom but still ensures to stay close to the DOM making Orbiton Apps fast and have better performance</p>
             </div>
             <div>
               <h3>Reactive and Mordern</h3>

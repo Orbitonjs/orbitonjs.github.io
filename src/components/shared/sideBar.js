@@ -72,28 +72,28 @@ export const SideBarOBJ = [
   },
   {
     drops: true,
-    name: 'Getting Started',
-    href: "/",
+    name: 'JSX in Orbiton',
+    href: "/docs/jsx-in-orbiton",
     dropdownlist: [
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'JSX in Orbiton',
+        href: "#jsx-in-orbiton"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Why JSX',
+        href: "#why-jsx"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Transpiling JSX in Orbiton',
+        href: "#transpiling-jsx-in-orbiton"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Namespaced JSX',
+        href: "#namespaced-jsx"
       },
     ]
   },

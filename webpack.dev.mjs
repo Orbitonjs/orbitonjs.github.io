@@ -30,6 +30,7 @@ export default {
   mode: "development",
   devServer: {
     static: './static/public',
+    https: true,
   },
   module: {
     rules: [

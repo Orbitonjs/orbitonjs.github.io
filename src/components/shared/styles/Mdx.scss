@@ -2,14 +2,14 @@ wrapper {
   pre {
     padding: 1rem;
     border-radius: 5px;
-    background: #141414;
+    background: #000000;
     overflow-x: overlay;
     code {
       font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
       color: antiquewhite;
     }
   }
-  inlinecode {
+  inlineCode {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     background-color: rgb(214, 214, 214);
   }
@@ -17,10 +17,6 @@ wrapper {
   ::-webkit-scrollbar-thumb {
     background: #8d8d8d;
   }
-
-  /* ::-webkit-scrollbar-track {
-  opacity: 0;
-} */
 
   ::-webkit-scrollbar-corner {
     background: none;
@@ -73,4 +69,8 @@ wrapper {
   tbody {
     background-color: rgb(235, 233, 233);
   }
+}
+inlineCode {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: rgb(214, 214, 214);
 }

@@ -1,0 +1,34 @@
+.icon {
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  padding: 1rem;
+  width: fit-content;
+  margin: 0.5rem auto;
+  svg {
+    transform: scale(2);
+  }
+}
+
+.card {
+  text-align: center;
+  max-width: 500px;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.cover {
+  margin: 0.5rem auto;
+  max-width: 800px;
+  display: flex;
+  & > div {
+    flex: 1;
+  }
+}
+.calltoaction {
+  text-align: center;
+  padding: 2rem 0px;
+  color: white;
+  background: linear-gradient(#000000ea, #00000092),
+    url("../../../../static/website-background-design-guide.png");
+}

@@ -2,7 +2,7 @@ import Orbiton, { Component } from 'orbiton'
 import * as styles from './styles/Nav.module.scss'
 import GithubLogo from '../../../static/Octocat.jpg'
 import Logo from '../../../static/logo.svg'
-import MenuSvg from '../../../static/menu.svg'
+import { MenuIcon, Search } from '../shared/Icons.jsx'
 
 export default class NavBar extends Component {
   constructor(props, context) {
@@ -15,7 +15,7 @@ export default class NavBar extends Component {
         <div ClassName={styles.importantNotification} >This Documentation is still in development mode so your won't find the full information here</div>
         <div className={styles.flex}>
           <div className={styles.menuicon}>
-            <img src={MenuSvg} alt="menu" />
+            <MenuIcon />
           </div>
           <div className={styles.logo}>
             <a href="/" >
@@ -23,9 +23,7 @@ export default class NavBar extends Component {
             </a>
           </div>
           <div className={styles.sideflex}>
-            <div className={styles.search}>
-              <input type="text" placeholder="Search..." name="search" id="search" />
-            </div>
+            <SearchBar />
             <div>
               <a href="https://github.com/Orbitonjs/orbiton" target="_blank" rel="noopener noreferrer">
                 <img src={GithubLogo} className={styles.navlogos} alt="git-octocal" /></a>
@@ -35,4 +33,17 @@ export default class NavBar extends Component {
       </nav>
     )
   }
+}
+
+function SearchBar(props) {
+  return (
+    <div className={styles.search}>
+      <div>
+        <span>
+          <Search />
+        </span>
+        <input type="text" placeholder="Search..." id="searchbar" />
+      </div>
+    </div>
+  )
 }

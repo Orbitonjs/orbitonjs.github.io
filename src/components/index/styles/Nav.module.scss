@@ -1,7 +1,5 @@
-
 body {
-  font-family: 'Roboto',
-  sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   background: whitesmoke;
 }
@@ -21,8 +19,8 @@ body {
 }
 .flex {
   display: flex;
-  margin-bottom: .2rem;
-  margin-top: .2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
   width: 100%;
 }
 
@@ -34,7 +32,6 @@ body {
     display: none;
   }
 }
-
 
 .logo {
   margin-left: 10px;
@@ -57,23 +54,29 @@ body {
   input {
     border: none;
     outline: none;
-    padding: .5rem;
-    background: rgba(184, 184, 184, 0.336);
-    border-radius: 5px;
-    &:hover {
-      background-color: rgba(107, 107, 107, 0.384);
-    }
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 0.9rem;
+    padding-left: 0.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 }
 .search {
   margin-right: 10px;
+  background-color: rgba(128, 128, 128, 0.288);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  div {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .importantNotification {
   color: white;
-  font-size: .8rem;
-  background: blue;
+  font-size: 0.8rem;
+  background: black;
   text-align: center;
   width: 100%;
-  padding: .4rem;
+  padding: 0.4rem;
 }

@@ -13,7 +13,7 @@ export default class Header extends Component {
           <div className={styles.headerlogo}>
             <img className={styles.rotatinglogo} src={Logo} alt="log" />
             <h1>ORBITON JS</h1>
-            <p>A minimalistic Javascript library for creating Browser UI's.</p>
+            <p>A minimalistic JavaScript library for creating Browser UI's.</p>
           </div>
         </header>
       </div>

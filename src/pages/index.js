@@ -3,6 +3,7 @@ import About from "../components/index/About"
 import Footer from "../components/index/Footer"
 import Header from "../components/index/Header"
 import NavBar from "../components/index/Navbar"
+import { Actions } from "../components/index/sponsor"
 import Head from "../components/shared/head"
 
 const App = <div>
@@ -10,6 +11,7 @@ const App = <div>
   <NavBar />
   <Header />
   <About />
+  <Actions />
   <Footer />
 </div>
 

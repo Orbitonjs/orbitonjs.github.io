@@ -3,7 +3,7 @@
 .about {
   display: flex;
   overflow-x: scroll;
-  padding: 1rem .3rem;
+  padding: 1rem 0.3rem;
   scrollbar-color: #8d8d8d00;
   scrollbar-width: thin;
   div {
@@ -15,12 +15,12 @@
     padding: 1rem;
     box-shadow: #efefef 1px 1px 5px;
     h3 {
-      font-size: 1.6rem;
+      font-size: 1.9rem;
       margin: 0px;
-      color: #3f51b5;
+      color: rgb(0, 81, 255);
     }
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: rgb(49, 49, 49);
     }
     b {
@@ -35,28 +35,29 @@
     }
   }
 }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background: #8d8d8d;
-  }
-  ::-webkit-scrollbar-track {
-    opacity: 0;
-  }
-  ::-webkit-scrollbar-corner {
-    background: none;
-  }
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #8d8d8d;
+}
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+::-webkit-scrollbar-corner {
+  background: none;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 .getstarted {
   text-align: center;
   a {
-    padding: 1rem 2rem;
-    transform: translateY(-1.3rem);
+    padding: 1rem 1.6rem;
+    transform: translateY(-1.5rem);
     cursor: pointer;
+    font-weight: bold;
     text-decoration: none;
-    background: linear-gradient(20deg, purple, rgb(255, 94, 0));
+    background: linear-gradient(20deg, black, black);
     border-radius: 50px;
     border: none;
     color: white;
@@ -70,7 +71,7 @@
 
   @include mobile {
     & {
-    flex-direction: column;
+      flex-direction: column;
     }
   }
   text-align: center;
@@ -82,19 +83,18 @@
   }
 }
 .instheading {
-    text-align: center;
-    font-size: 1.6rem;
-    margin: 0px;
-    color: #363636;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0px;
+  color: #363636;
 }
 
 .install2 {
   text-align: center;
 
-    padding: 0rem 1rem;
-  &>div {
+  padding: 0rem 1rem;
+  & > div {
     flex: 1;
-
   }
 }
 .install_usage {
