@@ -2,3 +2,5 @@ build
 dist
 node_modules
 *.log
+ignorefolder
+orbiton.code-workspace

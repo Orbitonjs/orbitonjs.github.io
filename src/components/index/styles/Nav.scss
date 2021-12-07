@@ -2,4 +2,56 @@
 body {
   font-family: 'Roboto',
   sans-serif;
+  margin: 0px;
+  background: whitesmoke;
+}
+
+.navbar {
+  background: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  padding: .2rem;
+  box-shadow: rgba(0, 0, 0, 0.63) 1px 1px 3px;
+  z-index: 5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.navlogos {
+  height: 40px;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.menuicon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.sideflex {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  input {
+    border: none;
+    outline: none;
+    padding: .5rem;
+    background: rgba(184, 184, 184, 0.336);
+    border-radius: 5px;
+    &:hover {
+      background-color: rgba(107, 107, 107, 0.384);
+    }
+  }
+}
+.search {
+  margin-right: 10px;
 }

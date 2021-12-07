@@ -1,0 +1,59 @@
+.editor {
+  font-family: Menlo,
+  Monaco,
+  Consolas,
+  'Courier New',
+  monospace;
+  background: #0f0d0b;
+  border-radius: 5px;
+  padding: .5rem;
+  overflow-x: scroll;
+  .expression {
+    color: #ffffff;
+  }
+
+  .htmtag {
+    color: #0044ff;
+  }
+  .htmatrr {
+    color: #f3de98;
+  }
+  .keyword {
+    color: #0000ff;
+  }
+  .quote {
+    color: #2baf02;
+  }
+
+  .string {
+    color: #03aa5c;
+  }
+
+  .expression {
+    color: white;
+  }
+
+  .expression {
+    color: white;
+  }
+}
+.shell {
+  font-family: Menlo,
+  Monaco,
+  Consolas,
+  'Courier New',
+  monospace;
+  background: #0f0d0b;
+  border-radius: 5px;
+  padding: .5rem;
+  overflow-x: scroll;
+  .cmd {
+    color: rgb(255, 123, 0);
+  }
+  .flag {
+    color: grey;
+  }
+  .arg {
+    color: white;
+  }
+}

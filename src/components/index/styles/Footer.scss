@@ -1,0 +1,29 @@
+@import "../../shared/styles/mixins.scss";
+
+footer {
+  background: #00051fb0;
+  margin-top: 1rem;
+}
+.footer {
+  display: flex;
+
+  ul {
+    flex: 1;
+    list-style: none;
+    li {
+      padding: .4rem;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+          color: #b9b9b9;
+        }
+      }
+    }
+  }
+}
+@include mobile {
+    .footer {
+      flex-direction: column;
+    }
+  }

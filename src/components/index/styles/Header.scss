@@ -1,0 +1,39 @@
+.header {
+  height: 400px;
+  background: url("../../../../static/gradienta-Ze3Y-Imod2A-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.headerlogo {
+  text-align: center;
+  padding-top: 4rem;
+  color: white;
+  img {
+    height:80px;
+    width: 80px;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.4rem;
+    color: rgb(245, 244, 244);
+  }
+}
+
+.rotatinglogo {
+  animation: rotating 7s infinite linear;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
