@@ -1,5 +1,5 @@
 import Orbiton, { Component } from 'orbiton'
-import "./styles/About.scss"
+import * as styles from "./styles/About.module.scss"
 import "../shared/styles/code.scss"
 
 export default class About extends Component {
@@ -10,17 +10,17 @@ export default class About extends Component {
     return (
       <div>
         <div>
-          <div className="getstarted">
-            <button>Get Started</button>
+          <div className={styles.getstarted}>
+            <a href="/docs/installation">Get Started</a>
           </div>
-          <div className="about">
+          <div className={styles.about}>
             <div>
               <h3>Light Weight</h3>
               <p>Orbiton JS is a lightweight library with just <b>6KB</b> when both the cpre and dom libraries are united. So your apps can load faser compared to other libraries.</p>
             </div>
             <div>
               <h3>Close to the DOM</h3>
-              <p>Orbiton JS utilizes the virtual dom but still ensures to stay close to the DOM in order for functions to be run faster and create faster appswith better perfomance</p>
+              <p>Orbiton JS utilizes the virtual dom but still ensures to stay close to the DOM in order for functions to be run faster and create faster apps with better perfomance</p>
             </div>
             <div>
               <h3>Reactive and Mordern</h3>
@@ -29,8 +29,8 @@ export default class About extends Component {
           </div>
         </div>
         <div>
-          <h3 className="instheading">Installation</h3>
-          <div className="install">
+          <h3 className={styles.instheading}>Installation</h3>
+          <div className={styles.install}>
             <div>
               Using NPM
               <div className="shell">

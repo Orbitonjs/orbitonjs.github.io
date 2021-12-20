@@ -51,10 +51,11 @@
   }
 .getstarted {
   text-align: center;
-  button {
+  a {
     padding: 1rem 2rem;
     transform: translateY(-1.3rem);
     cursor: pointer;
+    text-decoration: none;
     background: linear-gradient(20deg, purple, rgb(255, 94, 0));
     border-radius: 50px;
     border: none;

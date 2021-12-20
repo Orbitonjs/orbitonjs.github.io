@@ -15,5 +15,7 @@ const App = <div>
 
 const root = document.createElement("div")
 document.body.appendChild(root)
-
+const start = new Date();
 Orbiton.append(<div><App /></div>, root)
+const end = new Date();
+console.log(start.getTime() - end.getTime())

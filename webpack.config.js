@@ -4,13 +4,30 @@ const CopyPlugin = require("copy-webpack-plugin");
 const fs = require('fs')
 const { pages } = require("./project.config")
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const codeScreenshot = require('remark-code-screenshot').default
+//const remarkGfm = require('remark-gfm')
+let remarkGfm;
+let remarkToc;
+import('remark-toc').then((modu) => {
+  remarkToc = modu
+})
+import('remark-gfm').then((modu) => {
+  remarkGfm = modu
+})
+const renderer = `
+import Orbiton from 'orbiton';
+import jsx from 'orbiton/jsx-runtime';
 
+`
+
+const entry = {}
+
+pages.map((page) => {
+  entry[page] = `./src/pages/${page}.js`;
+})
 
 module.exports = {
-  entry: pages.reduce((config, page) => {
-    config[page] = `./src/pages/${page}.js`;
-    return config;
-  }, {}),
+  entry,
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
@@ -27,7 +44,14 @@ module.exports = {
         use: ['babel-loader',
           {
             loader: '@mdx-js/loader',
-            options: {}
+            options: {
+              renderer,
+              remarkPlugins: [
+                codeScreenshot,
+                remarkToc,
+                remarkGfm,
+              ]
+            }
           }
         ]
       },
@@ -40,24 +64,27 @@ module.exports = {
       },
 
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.((c|sa|sc)ss)$/i,
         use: [
-          // Creates `style` nodes from JS strings
           "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
+          {
+            loader: "css-loader",
+            options: {
+              esModule: true,
+              modules: {
+                auto: true,
+                localIdentName: "[path][name]__[local]--[hash:base64:5]",
+                namedExport: true,
+              },
+            },
+          },
           "sass-loader",
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2|otf)$/i,
         type: 'asset/resource',
       },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-      }
     ],
   },
   plugins: [
@@ -66,7 +93,7 @@ module.exports = {
         { from: "static/icons", to: "icons" },
       ],
     }),
-    new ImageMinimizerPlugin({
+    /* new ImageMinimizerPlugin({
       minimizerOptions: {
         // Lossless optimization with custom option
         // Feel free to experiment with options for better result for you
@@ -77,14 +104,16 @@ module.exports = {
           // Svgo configuration here https://github.com/svg/svgo#configuration
         ],
       },
-    }),
+    }), */
   ].concat(
     pages.map(
       (page) =>
         new HtmlWebpackPlugin({
           inject: true,
           template: `./src/template.html`,
-          filename: `${page}.html`
+          filename: `${page}.html`,
+          chunks: [page],
+          favicon: './static/favicon.png'
         })
     ),
   ),

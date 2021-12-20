@@ -1,6 +1,7 @@
 module.exports = {
   pages: [
     "index",
-    "docs/about"
+    "docs/about",
+    "docs/installation",
   ]
 }

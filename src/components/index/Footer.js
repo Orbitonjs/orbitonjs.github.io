@@ -1,5 +1,5 @@
 import Orbiton, { Component } from 'orbiton';
-import "./styles/Footer.scss"
+import * as styles from "./styles/Footer.module.scss"
 
 export default class Footer extends Component {
   constructor(props, context) {
@@ -9,7 +9,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className="footer">
+        <div className={styles.footer}>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/">Get Started</a></li>

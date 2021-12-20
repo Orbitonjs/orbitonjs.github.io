@@ -1450,11 +1450,6 @@ babel-plugin-extract-import-names@1.6.22:
   dependencies:
     "@babel/helper-plugin-utils" "7.10.4"
 
-babel-plugin-orbiton-jsx@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-orbiton-jsx/-/babel-plugin-orbiton-jsx-1.0.0.tgz#f5b980a93e46182dcf1aff41ddd80ac147b695a6"
-  integrity sha512-VmvZ08yPdgrevYrPZpoGjmdz+MRH6Ah9drb2vBXSe3AHULqOzRIXLvcB8x7wdWcMBM8GvmxR6NvEdIWg9bRUqA==
-
 babel-plugin-polyfill-corejs2@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.3.0.tgz#407082d0d355ba565af24126fb6cb8e9115251fd"
@@ -4587,11 +4582,6 @@ open@^8.0.9:
     define-lazy-prop "^2.0.0"
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
-
-orbiton@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/orbiton/-/orbiton-1.1.0.tgz#d3e72c7f4680877b13fc939d6507c8669ec22c22"
-  integrity sha512-RItQCi98MHGEz2LAAQdOpHSbGEF11BoHscHc7fMt+tuD3ykWW4cNexIpTKvYnDUNPFdW83k9pS6WH8wDtMKFnw==
 
 os-filter-obj@^2.0.0:
   version "2.0.0"

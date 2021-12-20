@@ -1,5 +1,5 @@
 import Orbiton, { Component } from 'orbiton'
-import "./styles/Header.scss"
+import * as styles from "./styles/Header.module.scss"
 import Logo from '../../../static/background.svg'
 
 export default class Header extends Component {
@@ -9,9 +9,9 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <header className="header">
-          <div className="headerlogo">
-            <img className="rotatinglogo" src={Logo} alt="log" />
+        <header className={styles.header}>
+          <div className={styles.headerlogo}>
+            <img className={styles.rotatinglogo} src={Logo} alt="log" />
             <h1>ORBITON JS</h1>
             <p>A minimalistic Javascript library for creating Browser UI's.</p>
           </div>

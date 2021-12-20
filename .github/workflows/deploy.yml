@@ -28,6 +28,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm install
+      - run: npm install orbiton@latest babel-plugin-orbiton-jsx@latest
       - run: npm run build
 
       - name: Deploy
