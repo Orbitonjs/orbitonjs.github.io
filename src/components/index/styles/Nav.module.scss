@@ -10,7 +10,8 @@ body {
   background: rgb(255, 255, 255);
   align-items: center;
   display: flex;
-  padding: .2rem;
+  flex-direction: column;
+  //padding: .2rem;
   box-shadow: rgba(0, 0, 0, 0.63) 1px 1px 3px;
   z-index: 5;
   position: fixed;
@@ -18,10 +19,22 @@ body {
   left: 0px;
   right: 0px;
 }
+.flex {
+  display: flex;
+  margin-bottom: .2rem;
+  margin-top: .2rem;
+  width: 100%;
+}
 
 .navlogos {
-  height: 40px;
+  height: 30px;
 }
+@media screen and (max-width: 450px) {
+  .search {
+    display: none;
+  }
+}
+
 
 .logo {
   margin-left: 10px;
@@ -54,4 +67,13 @@ body {
 }
 .search {
   margin-right: 10px;
+}
+
+.importantNotification {
+  color: white;
+  font-size: .8rem;
+  background: blue;
+  text-align: center;
+  width: 100%;
+  padding: .4rem;
 }

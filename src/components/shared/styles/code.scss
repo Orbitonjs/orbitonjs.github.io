@@ -1,59 +1,41 @@
-.editor {
-  font-family: Menlo,
-  Monaco,
-  Consolas,
-  'Courier New',
-  monospace;
-  background: #0f0d0b;
-  border-radius: 5px;
-  padding: .5rem;
-  overflow-x: scroll;
-  .expression {
-    color: #ffffff;
+.hljs {
+  .hljs-comment {
+    color: gray;
   }
-
-  .htmtag {
-    color: #0044ff;
+  .hljs-string {
+    color: #23bd82;
   }
-  .htmatrr {
-    color: #f3de98;
+  .hljs-attr {
+    color: #f0f087;
   }
-  .keyword {
-    color: #0000ff;
+  .hljs-name {
+    color: #0099ff;
   }
-  .quote {
-    color: #2baf02;
+  .hljs-tag {
+    color: #a4ebf8;
   }
-
-  .string {
-    color: #03aa5c;
+  .hljs-keyword {
+    color: #0051ff;
   }
-
-  .expression {
-    color: white;
+  .hljs-class {
+    color: #3e63b3;
   }
-
-  .expression {
-    color: white;
+  .hljs-function {
+    color: #c8ff00;
   }
 }
-.shell {
-  font-family: Menlo,
-  Monaco,
-  Consolas,
-  'Courier New',
-  monospace;
-  background: #0f0d0b;
+pre {
+  padding: 1rem;
   border-radius: 5px;
-  padding: .5rem;
-  overflow-x: scroll;
-  .cmd {
-    color: rgb(255, 123, 0);
-  }
-  .flag {
-    color: grey;
-  }
-  .arg {
-    color: white;
+  background: #141414;
+  overflow-x: overlay;
+
+  code {
+    font-family: Menlo,
+      Monaco,
+      Consolas,
+      'Courier New',
+      monospace;
+    color: antiquewhite;
   }
 }

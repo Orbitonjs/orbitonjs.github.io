@@ -1,6 +1,8 @@
 import Orbiton, { Component } from 'orbiton';
 import * as styles from './styles/Container.module.scss'
 import Menu from '../../../static/menu_white.svg'
+import Footer from '../index/Footer'
+import './styles/code.scss'
 import './styles/Mdx.scss'
 import { SideBarOBJ } from './sideBar'
 export default class Container extends Component {
@@ -24,6 +26,7 @@ export default class Container extends Component {
         <div className={styles.container}>
           {this.props.children}
         </div>
+        <Footer />
       </section>
     )
   }

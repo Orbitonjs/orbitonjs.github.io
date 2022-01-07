@@ -1,6 +1,7 @@
 import Orbiton, { Component } from 'orbiton'
 import * as styles from "./styles/About.module.scss"
 import "../shared/styles/code.scss"
+import Docs from './install_usage.mdx'
 
 export default class About extends Component {
   constructor(props, context) {
@@ -28,23 +29,7 @@ export default class About extends Component {
             </div>
           </div>
         </div>
-        <div>
-          <h3 className={styles.instheading}>Installation</h3>
-          <div className={styles.install}>
-            <div>
-              Using NPM
-              <div className="shell">
-                <span className="cmd">npm install</span><span className="arg"> orbiton</span><span className="flag"> --save-dev</span>
-              </div>
-            </div>
-            <div>
-              Using YARN
-              <div className="shell">
-                <span className="cmd">yarn add</span><span className="arg"> orbiton</span><span className="flag"> --dev</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Docs />
       </div>
     )
   }

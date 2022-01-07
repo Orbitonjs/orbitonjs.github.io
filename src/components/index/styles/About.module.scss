@@ -3,7 +3,7 @@
 .about {
   display: flex;
   overflow-x: scroll;
-  padding: .5rem .3rem;
+  padding: 1rem .3rem;
   scrollbar-color: #8d8d8d00;
   scrollbar-width: thin;
   div {
@@ -95,5 +95,16 @@
   &>div {
     flex: 1;
 
+  }
+}
+.install_usage {
+  display: flex;
+  & > div {
+    flex: 1;
+  }
+  @include mobile {
+    & {
+      flex-direction: column;
+    }
   }
 }

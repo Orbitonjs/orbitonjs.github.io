@@ -1,19 +1,13 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
-const fs = require('fs')
-const { pages } = require("./project.config")
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const codeScreenshot = require('remark-code-screenshot').default
-//const remarkGfm = require('remark-gfm')
-let remarkGfm;
-let remarkToc;
-import('remark-toc').then((modu) => {
-  remarkToc = modu
-})
-import('remark-gfm').then((modu) => {
-  remarkGfm = modu
-})
+import { resolve, dirname } from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyPlugin from "copy-webpack-plugin";
+import fs from 'fs';
+import { pages } from "./project.config.mjs";
+import ImageMinimizerPlugin from "image-minimizer-webpack-plugin";
+import remarkGfm from 'remark-gfm'
+import remarkToc from 'remark-toc'
+import rehypeHighlight from 'rehype-highlight'
+
 const renderer = `
 import Orbiton from 'orbiton';
 import jsx from 'orbiton/jsx-runtime';
@@ -26,30 +20,32 @@ pages.map((page) => {
   entry[page] = `./src/pages/${page}.js`;
 })
 
-module.exports = {
+export default {
   entry,
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'build'),
+    path: resolve(dirname('.'), 'build'),
     clean: true,
   },
-  mode: "production",
+  mode: "development",
   devServer: {
-    static: './static',
+    static: './static/public',
   },
   module: {
     rules: [
       {
-        test: /\.mdx?$/,
+        test: /\.(md|mdx)?$/,
         use: ['babel-loader',
           {
             loader: '@mdx-js/loader',
             options: {
               renderer,
               remarkPlugins: [
-                codeScreenshot,
                 remarkToc,
                 remarkGfm,
+              ],
+              rehypePlugins: [
+                rehypeHighlight
               ]
             }
           }
@@ -90,7 +86,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "static/icons", to: "icons" },
+        { from: "static/public", to: "" },
       ],
     }),
     /* new ImageMinimizerPlugin({
@@ -113,7 +109,6 @@ module.exports = {
           template: `./src/template.html`,
           filename: `${page}.html`,
           chunks: [page],
-          favicon: './static/favicon.png'
         })
     ),
   ),

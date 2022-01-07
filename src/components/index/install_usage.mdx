@@ -1,0 +1,54 @@
+import Card from "../shared/Card.jsx";
+import * as Styles from "./styles/About.module.scss";
+
+<div className={Styles.installUsage}>
+
+<Card>
+
+### Installation
+
+Using a CDN
+
+```html
+<script
+  crossorigin
+  src="https://unpkg.com/orbiton@latest/umd/orbiton.production.js"
+></script>
+```
+
+Using Npm or yarn
+
+```bash
+# yarn
+yarn add orbiton
+
+# npm
+npm install orbiton
+```
+
+</Card>
+
+<Card>
+
+### Usage
+
+Try it on [Codesandbox]()
+
+```js
+import Orbiton from "orbiton";
+
+const Button = (
+  <button
+    onClick={() => {
+      alert("Clicked");
+    }}
+  >
+    Click me
+  </button>
+);
+
+Orbiton.append(Button, document.getElementById("root"));
+```
+
+</Card>
+</div>

@@ -1,16 +1,16 @@
 .header {
   height: 400px;
-  background: url("../../../../static/gradienta-Ze3Y-Imod2A-unsplash.jpg");
+  background: linear-gradient(45deg, blue, red);
   background-attachment: fixed;
   background-size: 100%;
 }
 
 .headerlogo {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 4.3rem;
   color: white;
   img {
-    height:80px;
+    height: 80px;
     width: 80px;
   }
   h1 {

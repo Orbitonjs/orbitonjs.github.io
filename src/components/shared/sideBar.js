@@ -1,88 +1,73 @@
 export const SideBarOBJ = [
   {
-    drops: false,
-    name: 'Getting Started',
-    href: "/docs/installation"
-  },
-  {
     drops: true,
-    name: 'Getting Started',
+    name: 'Getting started with Orbiton',
     href: "/docs/installation",
     dropdownlist: [
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'What is Orbiton',
+        href: "#what-is-orbiton"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Why use Orbiton',
+        href: "#why-use-orbiton"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Installation',
+        href: "#installation"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Using CDN',
+        href: "#using-cdn"
+      },
+      {
+        drops: false,
+        name: 'Using Node JS',
+        href: "#using-node-js"
       },
     ]
   },
   {
     drops: true,
-    name: 'Getting Started',
-    href: "/docs",
+    name: 'Writing You first App',
+    href: "/docs/writing_your_first_app",
     dropdownlist: [
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Syntax',
+        href: "#syntax"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'In plain JavaScript',
+        href: "#in-plain-javascript"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
-      },
-      {
-        drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Using HTM or JSX.',
+        href: "#using-htm-or-jsx"
       },
     ]
   },
   {
     drops: true,
-    name: 'Getting Started',
-    href: "/",
+    name: 'The Orbiton Element',
+    href: "/docs/the_orbiton_element",
     dropdownlist: [
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
+        name: 'Creating an Orbiton element',
+        href: "#creating-an-orbiton-element"
       },
       {
         drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
-      },
-      {
-        drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
-      },
-      {
-        drops: false,
-        name: 'Getting Started',
-        href: "/docs/installation"
-      },
+        name: 'The `createElement` function.',
+        href: "#the-createelement-function"
+      }
     ]
   },
   {
