@@ -1,1 +1,4 @@
-
+{
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.root": "/build"
+}

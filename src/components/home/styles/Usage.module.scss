@@ -30,7 +30,7 @@
     min-height: unset;
   }
   padding: 0 20px;
-  h1 {
+  strong {
     color: #132f4c;
   }
   code {
@@ -50,7 +50,7 @@
 
 @include darkTheme {
   .root {
-    h1 {
+    strong {
       color: #f5f5f5;
     }
     pre {

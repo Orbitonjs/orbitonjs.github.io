@@ -7,6 +7,8 @@ import remarkGfm from 'remark-gfm'
 import remarkToc from 'remark-toc'
 import rehypeHighlight from 'rehype-highlight'
 import { getPages } from './utils.mjs'
+import rehypeSlug from 'rehype-slug'
+import toc from "@jsdevtools/rehype-toc"
 
 const renderer = `
 import Orbiton from 'orbiton';
@@ -46,7 +48,9 @@ export const config = {
                 remarkGfm,
               ],
               rehypePlugins: [
-                rehypeHighlight
+                rehypeHighlight,
+                rehypeSlug,
+                toc
               ]
             }
           }
@@ -90,18 +94,6 @@ export const config = {
         { from: "static/public", to: "" },
       ],
     }),
-    /* new ImageMinimizerPlugin({
-      minimizerOptions: {
-        // Lossless optimization with custom option
-        // Feel free to experiment with options for better result for you
-        plugins: [
-          ["gifsicle", { interlaced: true }],
-          ["jpegtran", { progressive: true }],
-          ["optipng", { optimizationLevel: 5 }],
-          // Svgo configuration here https://github.com/svg/svgo#configuration
-        ],
-      },
-    }), */
   ].concat(
     HTMLPages.map(
       (page) =>
