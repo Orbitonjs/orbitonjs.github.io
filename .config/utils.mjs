@@ -9,7 +9,8 @@ export function getPages(dir) {
   })
   for (const item of initDir) {
     if (item.isFile()) {
-      const UnixPath = path.join(dir, item.name).replaceAll("\\", "/")
+      const win32Path = path.join(dir, item.name)
+      const UnixPath = win32Path.replaceAll("\\", "/")
       pages.push(UnixPath)
     } else {
       const innerPages = getPages(path.join(dir, item.name))
