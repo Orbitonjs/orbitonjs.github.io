@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack serve --open --config ./.config/webpack.dev.mjs",
-    "build": "webpack --config ./.config/webpack.config.mjs"
+    "build": "webpack --config ./.config/webpack.prod.mjs"
   },
   "keywords": [],
   "author": "",
