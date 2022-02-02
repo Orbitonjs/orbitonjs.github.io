@@ -1,7 +1,4 @@
-- [JSX in Orbiton](#jsx-in-orbiton)
-  - [Why JSX](#why-jsx)
-  - [Transpiling JSX in Orbiton](#transpiling-jsx-in-orbiton)
-  - [Namespaced JSX](#namespaced-jsx)
+
 # JSX in Orbiton
 JSX is a declarative XML-like syntax that works within JavaScript. It was developed by the [React](https://reactjs.org) team. JSX makes you write HTML like syntax in Javascript. With JSX you can leverage the power of a full programming language (JavaScript) to build your view. This includes temporary variables, flow controls, and directly referencing JavaScript values in scope.
 

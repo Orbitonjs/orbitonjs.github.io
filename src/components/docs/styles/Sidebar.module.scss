@@ -1,0 +1,379 @@
+@import "../../shared/styles/mixins.scss";
+
+.root {
+  @media (min-width: 1200px) {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 240px;
+  }
+}
+.margin {
+  margin-left: 250px;
+  transition: all 0.3s;
+}
+.mdx {
+  padding: 12px;
+}
+.dropdownList {
+  min-height: 0px;
+  height: auto;
+  overflow: visible;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.hr {
+  margin: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-style: solid;
+  border-bottom-width: thin;
+  border-color: #eaeef3;
+  margin-top: 9.6px;
+  margin-bottom: 9.6px;
+}
+.content {
+  width: 250px;
+  color: rgb(255, 255, 255);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: none;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 0 auto;
+  z-index: 1200;
+  position: fixed;
+  top: 0px;
+  outline: 0px;
+  left: 0px;
+  border-right: 1px solid #e5e8ec;
+  background: #fff;
+}
+@include tablet {
+  .content {
+    left: -1000px;
+    transition: all 0.3s;
+  }
+  .margin {
+    margin-left: 0px;
+  }
+  body[siderbarOn] {
+    .content {
+      left: 0px;
+    }
+    .margin {
+      margin-left: 250px;
+    }
+  }
+}
+.siderbar {
+  flex: 0 0 auto;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.side-bar-item {
+  padding: 0 10px;
+  margin-top: 8px;
+  display: block;
+  svg {
+    width: 28px;
+    height: 25px;
+  }
+}
+.side-bar-button {
+  &:hover {
+    color: #20262d;
+    background-color: #f3f6f9;
+  }
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  outline: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #20262d;
+  font-size: 0.90625rem;
+  font-weight: 500;
+  margin: 4px 0px;
+  padding-left: 2px;
+  @media (min-width: 900px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@include darkTheme {
+  .hr {
+    border-color: rgb(30, 73, 118);
+  }
+  .content {
+    border-right: 1px solid rgb(19, 47, 76);
+    background: rgb(10, 25, 41);
+  }
+  .li {
+    a {
+      color: rgb(170, 180, 190);
+      &:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgba(19, 47, 76, 0.4);
+      }
+    }
+  }
+  .side-bar-button {
+    color: rgb(255, 255, 255);
+    &:hover {
+      background-color: rgba(19, 47, 76, 0.4);
+    }
+  }
+  .side-bar-icon {
+    background-color: rgb(19, 47, 76);
+  }
+}
+.side-bar-icon {
+  svg {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.25rem;
+    color: #007fff;
+  }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #f0f7ff;
+}
+.next-icon {
+  margin-left: auto;
+  margin-right: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1rem;
+  float: right;
+  color: #007fff;
+  &.ison {
+    transform: rotate(90deg);
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.overul {
+  width: 100%;
+}
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.li {
+  padding: 2px 0;
+  display: block;
+  a {
+    margin: 0;
+    &:hover {
+      color: #20262d;
+      background-color: #f3f6f9;
+    }
+    color: #007fff;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: #0072e5;
+    font-weight: 700;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 0.84375rem;
+    color: #2f3a45;
+    padding-left: 36px;
+    @media (min-width: 900px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+.heading {
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0 0.3rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #0000ff, #000080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+.logo {
+  padding: 1rem;
+}
+.imglogo {
+  width: 30px;
+  height: 30px;
+}
+
+.ltext {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.toggletoc {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  padding: 0.7rem;
+  border: none;
+  background-color: #e5e8ec;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: #011d3879 1px 1px 6px;
+}
+.toggletoc1 {
+  transition: all 0.3s ease-out;
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  margin: 3px;
+  background: black;
+}
+.toggletoc2 {
+  transition: all 0.3s ease-out;
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  margin: 3px;
+  background: black;
+}
+body[tocOn] {
+  .toggletoc1 {
+    transform: rotate(45deg) translateY(4px);
+  }
+  .toggletoc2 {
+    transform: rotate(-45deg) translateY(-5px);
+  }
+}

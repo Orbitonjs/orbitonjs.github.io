@@ -1,6 +1,6 @@
 import Orbiton, { Component } from "orbiton"
 import { Github, SearchIcon, NightIcon, DayIcon, Docs, Code, Pencil, Book, Eye, Templates, MenuIcon } from "../shared/Icons.jsx"
-import * as styles from "./styles/NavBar.module.scss"
+import * as styles from "./styles/Navbar.module.scss"
 import Logo from "../../../static/favicon.svg"
 
 
@@ -34,8 +34,6 @@ export class DesktopNavBar extends Component {
             <h2 className={styles.heading}>ORBITON JS</h2>
           </a>
         </div>
-        <Menu />
-
         <div className={styles.side}>
           <Search />
           <Icons />
@@ -114,14 +112,14 @@ class DocsDropDown extends Component {
           </div>
         </div>
         <hr className={styles.hr} />
-        <a href="/docs/api-reference" className={styles.popupitem}>
+        <div className={styles.popupitem}>
           <div className={styles.docsicon}>
             <Code />
           </div>
           <div>
             <h4>API Reference</h4>
           </div>
-        </a>
+        </div>
         <hr className={styles.hr} />
 
       </div>
@@ -136,16 +134,12 @@ class Icons extends Component {
       dropDownOn: false,
       darkTheme: false
     }
-    this.toggleDropdown = this.toggleDropdown.bind(this)
+    this.toggleMenu = this.toggleMenu.bind(this)
     this.toggleTheme = this.toggleTheme.bind(this)
   }
 
-  toggleDropdown() {
-    this.updateState(
-      {
-        dropDownOn: !this.state.dropDownOn
-      }
-    )
+  toggleMenu() {
+    document.body.toggleAttribute("siderbarOn")
   }
   toggleTheme() {
     document.body.toggleAttribute("dark-theme")
@@ -163,14 +157,9 @@ class Icons extends Component {
         <div onClick={this.toggleTheme} className={styles.github}>
           {this.state.darkTheme ? <DayIcon /> : <NightIcon />}
         </div>
-        {this.state.dropDownOn ? <div onClick={this.toggleDropdown} className={`${styles.menuicon} ${styles.github}`}>
+        <div onClick={this.toggleMenu} className={`${styles.menuicon} ${styles.github}`}>
           <MenuIcon />
-
-          <MobileDropDown on={this.state.dropDownOn} />
-        </div> : <div onClick={this.toggleDropdown} className={`${styles.menuicon} ${styles.github}`}>
-          <MenuIcon />
-
-        </div>}
+        </div>
       </div>
     )
   }
@@ -194,76 +183,6 @@ class Search extends Component {
         <span className={styles.skeyshort}>
           Ctrl+k
         </span>
-
-      </div>
-    )
-  }
-}
-
-class MobileDropDown extends Component {
-  constructor(props, context) {
-    super(props, context)
-  }
-
-  render() {
-
-    return (
-      <div className={styles.mobilepopup}>
-        <hr className={styles.hr} />
-        <div className={styles.popupitem}>
-          <div className={styles.docsicon}>
-            <Docs />
-          </div>
-          <div>
-            <h4>Docs</h4>
-          </div>
-        </div>
-        <hr className={styles.hr} />
-        <div className={styles.popupitem}>
-          <div className={styles.docsicon}>
-            <Pencil />
-          </div>
-          <div>
-            <h4>Learn</h4>
-          </div>
-        </div>
-        <hr className={styles.hr} />
-        <div className={styles.popupitem}>
-          <div className={styles.docsicon}>
-            <Book />
-          </div>
-          <div>
-            <h4>How To Guides</h4>
-          </div>
-        </div>
-        <hr className={styles.hr} />
-        <a href="/docs/api-reference" className={styles.popupitem}>
-          <div className={styles.docsicon}>
-            <Code />
-          </div>
-          <div>
-            <h4>API Reference</h4>
-          </div>
-        </a>
-        <hr className={styles.hr} />
-        <div className={styles.popupitem}>
-          <div className={styles.docsicon}>
-            <Eye />
-          </div>
-          <div>
-            <h4>About</h4>
-          </div>
-        </div>
-        <hr className={styles.hr} />
-        <div className={styles.popupitem}>
-          <div className={styles.docsicon}>
-            <Templates />
-          </div>
-          <div>
-            <h4>Blog</h4>
-          </div>
-        </div>
-        <hr className={styles.hr} />
 
       </div>
     )

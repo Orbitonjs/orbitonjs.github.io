@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 wrapper {
   pre {
     padding: 1rem;
@@ -14,10 +16,6 @@ wrapper {
     background-color: rgb(214, 214, 214);
   }
 
-  ::-webkit-scrollbar-thumb {
-    background: #8d8d8d;
-  }
-
   ::-webkit-scrollbar-corner {
     background: none;
   }
@@ -25,6 +23,18 @@ wrapper {
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgb(107, 107, 107);
+    min-height: 24px;
+    border: 3px solid rgb(43, 43, 43);
+  }
+  ::-webkit-scrollbar-corner,
+  ::-webkit-scrollbar-corner {
+    background-color: rgb(43, 43, 43);
   }
 
   a {
@@ -73,4 +83,28 @@ wrapper {
 inlineCode {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: rgb(214, 214, 214);
+}
+
+@include darkTheme {
+  wrapper {
+    table {
+      background-color: transparent;
+    }
+    thead {
+      background-color: rgb(7, 16, 26);
+    }
+    th,
+    td {
+      padding: 0.5rem;
+    }
+    tbody {
+      background-color: rgb(8, 19, 31);
+    }
+    blockquote {
+      padding: 1rem;
+      background: #ffa60081;
+      border-radius: 5px;
+      margin: 10px;
+    }
+  }
 }

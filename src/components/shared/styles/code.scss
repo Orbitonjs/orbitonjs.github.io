@@ -26,12 +26,13 @@
 }
 pre {
   padding: 1rem;
-  border-radius: 5px;
-  background: #141414;
+  border-radius: 10px;
+  background: #131720;
   overflow-x: overlay;
 
   code {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     color: antiquewhite;
+    font-size: 0.85rem;
   }
 }
