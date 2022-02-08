@@ -1,8 +1,0 @@
-/**
-* A Javascript library for building Browser User Interfaces
-* @author Beigana Jim Junior <jimjunior854@outlook.com>
-* @copyright Beigana Jim Junior © 2021 - present
-* @license MIT
-*
-* Learn more at the official Documentation: {@link https://orbiton.js.org}
-*/
