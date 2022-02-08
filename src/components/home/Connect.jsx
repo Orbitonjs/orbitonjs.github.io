@@ -1,6 +1,7 @@
 import Orbiton, { Component } from "orbiton"
 import * as styles from "./styles/Connect.module.scss"
 import { Github, Next } from "../shared/Icons.jsx"
+import axios from "axios"
 
 export class Connect extends Component {
   constructor(props, context) {
@@ -57,8 +58,40 @@ class Form extends Component {
   constructor(props, context) {
     super(props, context)
     this.state = {
-      email: ""
+      email: "",
+      success: false,
+      faild: false
     }
+    this.getEmail = this.getEmail.bind(this)
+    this.submit = this.submit.bind(this)
+  }
+  getEmail(e) {
+    const { value } = e.target
+    this.updateState({
+      email: value
+    })
+  }
+  /**
+  * Brief description of the function here.
+  * @summary If the description is long, write your summary here. Otherwise, feel free to remove this.
+  * @param {SubmitEvent} e -
+  */
+  submit(e) {
+    e.preventDefault()
+    const payload = {
+      email: this.state.email
+    }
+    axios.post("/api", payload)
+      .then((res) => {
+        this.updateState({
+          email: "",
+          success: true
+        })
+      }).catch((err) => {
+        this.updateState({
+          failed: true
+        })
+      })
   }
   render() {
     return (
@@ -68,9 +101,9 @@ class Form extends Component {
         </label>
         <div className={styles.inputroot}>
           <div className={styles.inputcover}>
-            <input className={styles.input} type="email" name="email" id="email" placeholder="example@domain.com" />
+            <input value={this.state.email} onChange={this.getEmail} className={styles.input} type="email" name="email" id="email" placeholder="example@domain.com" />
           </div>
-          <button className={styles.button}>
+          <button onClick={this.submit} className={styles.button}>
             Subscribe
             <span className={styles.buttoncover}></span>
           </button>

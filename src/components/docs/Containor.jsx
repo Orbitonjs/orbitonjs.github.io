@@ -24,10 +24,9 @@ export class Container extends Component {
         <NavBar />
         <SiderBar />
         <section className={styles.margin}>
-          <div className={styles.mdx}>
+          <main className={styles.mdx}>
             {this.props.children}
-          </div>
-          <TableOfContentsButton />
+          </main>
           <Connect />
           <Footer />
         </section>

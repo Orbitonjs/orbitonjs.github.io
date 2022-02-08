@@ -137,12 +137,20 @@ class Icons extends Component {
     this.toggleMenu = this.toggleMenu.bind(this)
     this.toggleTheme = this.toggleTheme.bind(this)
   }
+  Mounted() {
+    if (localStorage.getItem("theme") === "dark") {
+      this.updateState({
+        darkTheme: true
+      })
+    }
+  }
 
   toggleMenu() {
     document.body.toggleAttribute("siderbarOn")
   }
   toggleTheme() {
     document.body.toggleAttribute("dark-theme")
+    localStorage.setItem("theme", this.state.darkTheme ? "light" : "dark")
     this.updateState({
       darkTheme: !this.state.darkTheme
     })

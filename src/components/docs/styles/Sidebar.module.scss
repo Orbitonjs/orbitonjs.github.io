@@ -1,5 +1,11 @@
 @import "../../shared/styles/mixins.scss";
 
+@include mobile {
+  .toggletoc {
+    display: none;
+  }
+}
+
 .root {
   @media (min-width: 1200px) {
     -webkit-flex-shrink: 0;
@@ -9,8 +15,14 @@
   }
 }
 .margin {
-  margin-left: 250px;
+  margin-right: 200px;
+  margin-left: 270px;
   transition: all 0.3s;
+}
+@include mobile {
+  .margin {
+    margin-right: 0px;
+  }
 }
 .mdx {
   padding: 12px;

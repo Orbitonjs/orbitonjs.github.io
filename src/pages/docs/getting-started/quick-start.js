@@ -1,12 +1,10 @@
 import Orbiton from "orbiton"
-import NavBar from "../../components/index/Navbar"
-import Container from "../../components/shared/Container.jsx"
-import Head from "../../components/shared/head"
-import Docs from "../../docs/Installation.mdx"
+import { Container } from "../../../components/docs/Containor.jsx"
+import Head from "../../../components/shared/head"
+import Docs from "../../../docs/getting-started/quick-start.md"
 
 const App = <div>
   <Head title="Getting Started | Orbiton JS " />
-  <NavBar />
   <Container >
     <Docs />
   </Container>

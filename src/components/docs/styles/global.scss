@@ -1,15 +1,29 @@
 @import "../../shared/styles/mixins.scss";
 
+@include mobile {
+  .toc {
+    display: none;
+  }
+}
 .toc {
   position: fixed;
   top: 140px;
   transition: all 0.3s;
-  right: -1000px;
+  right: 12px;
   padding: 0.7rem;
   border: none;
-  background-color: #e5e8ec;
   border-radius: 8px;
-  box-shadow: #011d3879 1px 1px 6px;
+  a {
+    color: #1e1e1f;
+    -webkit-text-decoration: underline;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    &:hover {
+      color: #0072e5;
+      text-decoration-color: #0072e5;
+    }
+  }
   ol {
     list-style: none;
     padding-left: 20px;
@@ -25,5 +39,13 @@ body[tocOn] {
   .toc {
     top: 140px;
     right: 12px;
+  }
+}
+
+@include darkTheme {
+  .toc {
+    a {
+      color: #b3b3b3;
+    }
   }
 }

@@ -6,8 +6,9 @@ export default class Head extends Component {
     this.state = {}
   }
   Mounted() {
-    console.log(document.title)
+    // Set document title
     document.title = this.props.title
+    // Register Service worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js').then(registration => {
@@ -16,6 +17,22 @@ export default class Head extends Component {
           console.log('SW registration failed: ', registrationError);
         });
       });
+    }
+    // Themeing
+    if (localStorage.getItem("theme") !== null) {
+      const theme = localStorage.getItem("theme")
+      if (theme === "dark") {
+        document.body.toggleAttribute("dark-theme")
+      }
+    } else {
+      try {
+        const darkTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        if (darkTheme.matches) {
+          document.body.toggleAttribute("dark-theme")
+        }
+      } catch (error) {
+        //
+      }
     }
   }
   render() {

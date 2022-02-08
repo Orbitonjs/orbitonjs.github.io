@@ -50,7 +50,7 @@ export const config = {
               rehypePlugins: [
                 rehypeHighlight,
                 rehypeSlug,
-                [toc, { headings: ["h2", "h3", "h4"] }]
+                [toc, { headings: ["h2", "h3"] }]
               ]
             }
           }

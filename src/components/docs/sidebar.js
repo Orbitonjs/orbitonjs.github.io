@@ -8,8 +8,8 @@ export const SIDEBAROBJS = [
     icon: <Icons.Book />,
     dropdownList: [
       {
-        name: "Overview",
-        href: "/docs/getting-started/overview"
+        name: "Quick Start",
+        href: "/docs/getting-started/quick-start"
       },
       {
         name: "Installation",

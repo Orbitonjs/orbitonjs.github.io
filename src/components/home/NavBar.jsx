@@ -40,9 +40,6 @@ export class DesktopNavBar extends Component {
           <Search />
           <Icons />
         </div>
-
-
-
       </div>
     )
   }
@@ -147,8 +144,17 @@ class Icons extends Component {
       }
     )
   }
+  Mounted() {
+    if (localStorage.getItem("theme") === "dark") {
+      this.updateState({
+        darkTheme: true
+      })
+    }
+  }
+
   toggleTheme() {
     document.body.toggleAttribute("dark-theme")
+    localStorage.setItem("theme", this.state.darkTheme ? "light" : "dark")
     this.updateState({
       darkTheme: !this.state.darkTheme
     })
@@ -210,14 +216,14 @@ class MobileDropDown extends Component {
     return (
       <div className={styles.mobilepopup}>
         <hr className={styles.hr} />
-        <div className={styles.popupitem}>
+        <a href="/docs/getting-started/quick-start" className={styles.popupitem}>
           <div className={styles.docsicon}>
             <Docs />
           </div>
           <div>
             <h4>Docs</h4>
           </div>
-        </div>
+        </a>
         <hr className={styles.hr} />
         <div className={styles.popupitem}>
           <div className={styles.docsicon}>
