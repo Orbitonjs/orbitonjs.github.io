@@ -27,15 +27,15 @@ export const SIDEBAROBJS = [
     dropdownList: [
       {
         name: "Overview",
-        href: "/docs/getting-started/overview"
+        href: "/learn"
       },
       {
         name: "Installation",
-        href: "/docs/getting-started/installation"
+        href: "/learn"
       },
       {
         name: "Usage",
-        href: "/docs/getting-started/usage"
+        href: "/learn"
       },
     ]
   },

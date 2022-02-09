@@ -84,23 +84,23 @@ class DocsDropDown extends Component {
     return (
       <div className={styles.popup}>
         <hr className={styles.hr} />
-        <div className={styles.popupitem}>
+        <a href="/docs/getting-started/quick-start" className={styles.popupitem}>
           <div className={styles.docsicon}>
             <Docs />
           </div>
           <div>
             <h4>Getting Started</h4>
           </div>
-        </div>
+        </a>
         <hr className={styles.hr} />
-        <div className={styles.popupitem}>
+        <a href="/learn/" className={styles.popupitem}>
           <div className={styles.docsicon}>
             <Pencil />
           </div>
           <div>
             <h4>Learn</h4>
           </div>
-        </div>
+        </a>
         <hr className={styles.hr} />
         <div className={styles.popupitem}>
           <div className={styles.docsicon}>
@@ -225,14 +225,14 @@ class MobileDropDown extends Component {
           </div>
         </a>
         <hr className={styles.hr} />
-        <div className={styles.popupitem}>
+        <a href="/learn/" className={styles.popupitem}>
           <div className={styles.docsicon}>
             <Pencil />
           </div>
           <div>
             <h4>Learn</h4>
           </div>
-        </div>
+        </a>
         <hr className={styles.hr} />
         <div className={styles.popupitem}>
           <div className={styles.docsicon}>
