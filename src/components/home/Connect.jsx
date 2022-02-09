@@ -81,7 +81,7 @@ class Form extends Component {
     const payload = {
       email: this.state.email
     }
-    axios.post("/api", payload)
+    axios.post("https://orbitonjs.vercel.app/api/subscribe", payload)
       .then((res) => {
         this.updateState({
           email: "",
