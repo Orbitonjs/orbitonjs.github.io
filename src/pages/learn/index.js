@@ -1,5 +1,5 @@
 import Orbiton from "orbiton"
-import { Container } from "../../../components/docs/Containor.jsx"
+import { Container } from "../../components/docs/Containor.jsx"
 import Head from "../../../components/shared/head"
 import Docs from "../../learn/index.md"
 
