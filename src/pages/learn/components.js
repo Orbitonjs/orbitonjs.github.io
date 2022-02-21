@@ -1,10 +1,10 @@
 import Orbiton from "orbiton"
 import { Container } from "../../components/docs/Containor.jsx"
 import Head from "../../components/shared/head"
-import Docs from "../../learn/index.md"
+import Docs from "../../learn/components.md"
 
 const App = <div>
-  <Head title="The Orbiton JS Tutorial | Orbiton JS " />
+  <Head title="Components And Props | Orbiton JS " />
   <Container >
     <Docs />
   </Container>

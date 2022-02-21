@@ -36,14 +36,14 @@ const Grid = (props) => {
       </div>
       <div className={styles.social}>
         <div className={styles.socialItem}>
-          <a href="/" className={styles.card}>
+          <a href="https://orbitonjs.medium.com" className={styles.card}>
             <p className={styles.cardTitle}>Blog</p>
             <p className={styles.cardCaption}>Check out articles and news from the Orbiton team and community.</p>
             <p className={styles.learnMore}><span>Learn more</span><Next /></p>
           </a>
         </div>
         <div className={styles.socialItem}>
-          <a href="/" className={styles.card}>
+          <a href="https://www.twitter.com/orbitonjs" className={styles.card}>
             <p className={styles.cardTitle}>Twitter</p>
             <p className={styles.cardCaption}>Follow <span>@Orbitonjs</span> on twitter to get latest updates fromus.</p>
             <p className={styles.learnMore}><span>Follow</span><Next /></p>
@@ -95,15 +95,16 @@ class Form extends Component {
   }
   render() {
     return (
-      <form>
-        <label className={styles.label} for="email">
+      <form action="https://gmail.us14.list-manage.com/subscribe/post?u=99353f2e561ebda9085a333e3&amp;id=eca265251f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
+        <input style={{ display: "none" }} type="text" name="b_99353f2e561ebda9085a333e3_eca265251f" tabindex="-1" value=""></input>
+        <label className={styles.label} for="mce-EMAIL">
           Enter your email
         </label>
         <div className={styles.inputroot}>
           <div className={styles.inputcover}>
-            <input value={this.state.email} onChange={this.getEmail} className={styles.input} type="email" name="email" id="email" placeholder="example@domain.com" />
+            <input value={this.state.email} onChange={this.getEmail} className={styles.input} type="email" name="email" id="mce-EMAIL" placeholder="example@domain.com" />
           </div>
-          <button onClick={this.submit} className={styles.button}>
+          <button id="mc-embedded-subscribe" className={styles.button}>
             Subscribe
             <span className={styles.buttoncover}></span>
           </button>

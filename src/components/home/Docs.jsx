@@ -62,7 +62,7 @@ export class ExploreDocs extends Component {
                   Getting Started
                 </span>
                 <span className={styles.tabp}>A guide to getting started with Orbiton JS and the Orbiton JS documentation</span>
-                <a className={styles.taba} href="/">
+                <a className={styles.taba} href="/docs/getting-started/quick-start">
                   <span>Learn more</span>
                   <Next />
                 </a>
@@ -80,7 +80,7 @@ export class ExploreDocs extends Component {
                   Learn
                 </span>
                 <span className={styles.tabp}>A free full tutorial teaching Orbiton JS for beginner level.</span>
-                <a className={styles.taba} href="/">
+                <a className={styles.taba} href="/learn/">
                   <span>Learn more</span>
                   <Next />
                 </a>
@@ -116,7 +116,7 @@ export class ExploreDocs extends Component {
                   API Reference
                 </span>
                 <span className={styles.tabp}>The complete detailed API Reference to all utils provided Orbiton JS</span>
-                <a className={styles.taba} href="/">
+                <a className={styles.taba} href="/docs/api-reference">
                   <span>Learn more</span>
                   <Next />
                 </a>

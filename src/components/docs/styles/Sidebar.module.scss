@@ -174,7 +174,12 @@
     padding-bottom: 5px;
   }
 }
-
+.active-link {
+  a {
+    color: #20262d;
+    background-color: #dcdfe2;
+  }
+}
 @include darkTheme {
   .hr {
     border-color: rgb(30, 73, 118);
@@ -182,6 +187,12 @@
   .content {
     border-right: 1px solid rgb(19, 47, 76);
     background: rgb(10, 25, 41);
+  }
+  .active-link {
+    a {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 65, 109, 0.4);
+    }
   }
   .li {
     a {

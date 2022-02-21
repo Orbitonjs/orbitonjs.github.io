@@ -100,8 +100,16 @@ class SidebarItem extends Component {
       on: !this.state.on
     })
   }
+  Mounted() {
+    if (location.pathname.startsWith(this.props.rootPath)) {
+      this.updateState({
+        on: true
+      })
+    }
+  }
   render() {
     const { props } = this
+    const pathname = location.pathname
     return (<li className={styles.sideBarItem}>
       {props.href ? <a href={props.href} className={styles.sideBarButton}>
         <span className={styles.sideBarIcon}>{props.icon}</span>{props.name}
@@ -115,7 +123,7 @@ class SidebarItem extends Component {
             <ul className={styles.ul}>
               {props.dropdownList.map((item) => {
                 return (
-                  <li className={styles.li}>
+                  <li className={`${styles.li} ${pathname + location.hash === item.href ? styles.activeLink : ""}`}>
                     <a href={item.href}>{item.name}</a>
                   </li>
                 )

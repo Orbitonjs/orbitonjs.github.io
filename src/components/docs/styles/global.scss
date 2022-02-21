@@ -9,12 +9,16 @@
   position: fixed;
   top: 140px;
   transition: all 0.3s;
-  right: 12px;
-  padding: 0.7rem;
+  right: 0px;
+  width: 220px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow-y: auto;
   border: none;
   border-radius: 8px;
   a {
-    color: #1e1e1f;
+    color: #39393aef;
     -webkit-text-decoration: underline;
     text-decoration: none;
     font-size: 0.8rem;
@@ -26,8 +30,9 @@
   }
   ol {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 10px;
     li {
+      padding: 0px 0px 0px 10px;
       border-left: #e5e8ec00 2px solid;
       &:hover {
         border-left: rgb(0, 132, 255) 2px solid;
