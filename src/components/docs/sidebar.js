@@ -40,10 +40,6 @@ export const SIDEBAROBJS = [
         href: "/learn/events-and-attributes"
       },
       {
-        name: "Conditional Rendering",
-        href: "/learn/conditional-rendering"
-      },
-      {
         name: "Components and Props",
         href: "/learn/components"
       },
@@ -51,6 +47,10 @@ export const SIDEBAROBJS = [
         name: "State Managment",
         href: "/learn/state-management"
       },
+      {
+        name: "Conditional Rendering",
+        href: "/learn/conditional-rendering"
+      },/*
       {
         name: "Lifecycles",
         href: "/learn/lifecycles"
@@ -62,7 +62,7 @@ export const SIDEBAROBJS = [
       {
         name: "What Next",
         href: "/learn/what-next"
-      },
+      }, */
     ]
   },
   {
