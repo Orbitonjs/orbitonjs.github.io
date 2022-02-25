@@ -30,7 +30,29 @@
   <meta property="twitter:description" content="A lightweight, fast and modern JavaScript library for Creating UIs">
   <meta property="twitter:image" content="https://orbitonjs.github.io/preview.PNG">
   <!-- <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/99353f2e561ebda9085a333e3/e21562033943ca289c41e7c15.js");</script> -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD-PqkHwSh15mqNYM73Sec1qwpsp2RPXYM",
+    authDomain: "orbiton-js.firebaseapp.com",
+    projectId: "orbiton-js",
+    storageBucket: "orbiton-js.appspot.com",
+    messagingSenderId: "773954526161",
+    appId: "1:773954526161:web:c8b6805df789336fd3def0",
+    measurementId: "G-GMEFG4CGLT"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </head>
 
 <body>
