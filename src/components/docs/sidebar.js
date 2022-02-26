@@ -70,16 +70,8 @@ export const SIDEBAROBJS = [
     icon: <Icons.HowTo />,
     dropdownList: [
       {
-        name: "Overview",
-        href: "/docs/getting-started/overview"
-      },
-      {
-        name: "Installation",
-        href: "/docs/getting-started/installation"
-      },
-      {
-        name: "Usage",
-        href: "/docs/getting-started/usage"
+        name: "JSX in Orbiton",
+        href: "/docs/how-to-guides/jsx-in-orbiton"
       },
     ]
   },
@@ -94,23 +86,23 @@ export const SIDEBAROBJS = [
       },
       {
         name: "createElement",
-        href: "/docs/api-reference"
+        href: "/docs/api-reference#createElement"
       },
       {
         name: "createComponent",
-        href: "/docs/api-reference"
+        href: "/docs/api-reference#createComponent"
       },
       {
         name: "LogicalComponent",
-        href: "/docs/api-reference"
+        href: "/docs/api-reference#LogicalComponent"
       },
       {
         name: "withComponent",
-        href: "/docs/api-reference"
+        href: "/docs/api-reference#withComponent"
       },
       {
         name: "render",
-        href: "/docs/api-reference"
+        href: "/docs/api-reference#render"
       },
     ]
   },

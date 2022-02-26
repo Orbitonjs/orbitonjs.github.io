@@ -22,7 +22,7 @@ wrapper {
   }
   inlineCode {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    background-color: rgb(214, 214, 214);
+    background-color: #d6d6d6;
   }
 
   ::-webkit-scrollbar-corner {
@@ -50,7 +50,7 @@ wrapper {
     color: #0072e5;
     -webkit-text-decoration: underline;
     text-decoration: underline;
-    text-decoration-color: rgba(0, 127, 255, 0.4);
+    text-decoration-color: #007fff66;
     &:hover {
       text-decoration-color: #0072e5;
     }
@@ -81,6 +81,14 @@ wrapper {
   h3 {
     font-size: 1.3rem;
   }
+  h2,
+  h3 {
+    border-bottom: 1px #6d6c6c solid;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 2px #0394d8 solid;
+    }
+  }
   li {
     padding: 0.5rem;
   }
@@ -105,22 +113,22 @@ wrapper {
   }
 
   table {
-    background-color: white;
+    background-color: #ffffff;
   }
   thead {
-    background-color: rgb(209, 209, 209);
+    background-color: #d1d1d1;
   }
   th,
   td {
     padding: 0.5rem;
   }
   tbody {
-    background-color: rgb(235, 233, 233);
+    background-color: #ebe9e9;
   }
 }
 inlineCode {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  background-color: rgb(214, 214, 214);
+  background-color: #d6d6d6;
 }
 
 @include darkTheme {
@@ -129,20 +137,20 @@ inlineCode {
       background-color: transparent;
     }
     thead {
-      background-color: rgb(7, 16, 26);
+      background-color: #07101a;
     }
     h1,
     h2,
     h3,
     h4 {
-      color: whitesmoke;
+      color: #71e8f8;
     }
     th,
     td {
       padding: 0.5rem;
     }
     tbody {
-      background-color: rgb(8, 19, 31);
+      background-color: #08131f;
     }
     blockquote {
       padding: 1rem;
@@ -150,9 +158,16 @@ inlineCode {
       border-radius: 5px;
       margin: 10px;
     }
+    a {
+      color: #00ffff;
+      text-decoration-color: #019696;
+      &:hover {
+        text-decoration-color: #00ffff;
+      }
+    }
   }
 }
 inlineCode {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  background-color: rgb(214, 214, 214);
+  background-color: #d6d6d6;
 }

@@ -10,7 +10,7 @@ export default class Footer extends Component {
     const date = new Date()
     return (
       <footer>
-        <p><span>Please Show your love and <a href="https://www.twitter.com/jimjuniorb">SPONSOR</a> this projet to keep its development progressing.</span></p>
+        <p><span>Please Show your love and <a href="https://www.twitter.com/jimjuniorb">SPONSOR</a> this project to keep its development progressing.</span></p>
         <div className={styles.footer}>
           <ul>
             <li><a href="/">Home</a></li>
