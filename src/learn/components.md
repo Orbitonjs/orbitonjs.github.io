@@ -23,7 +23,7 @@ The second method works like this.
 ```jsx
 // create the Avatar once
 const Avatar = <div>
-  <img src=”https://yourdomain.com/path/to/image” />
+  <img src="https://yourdomain.com/path/to/image" />
   <span> Username</span>
 </div>
 // just reuse it anywhere you need it
@@ -121,7 +121,7 @@ So far we have learnt how to create components and we have used them in JSX but 
 
 ### Using the `createComponent`
 
-Using the `ceateComponent` function if easy all you need Is the component and its props.
+Using the `createComponent` function if easy all you need Is the component and its props.
 The `createComponent` function takes in three arguments, the first is the component which is required then the props which are optional. The third is an argument used by Orbiton internally so you can just ignore it.
 Example:
 

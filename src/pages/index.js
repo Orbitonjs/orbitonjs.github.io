@@ -7,6 +7,7 @@ import { Usage } from "../components/home/Why.jsx"
 import { Connect } from "../components/home/Connect.jsx"
 import Footer from "../components/index/Footer"
 import "../components/shared/styles/global.scss"
+import { SponsorShip } from "../components/home/sponsor.jsx"
 
 
 
@@ -35,6 +36,7 @@ class App extends Component {
         <Header />
         <Docs />
         <Usage />
+        <SponsorShip />
         <Connect />
         <Footer />
       </div:Head>

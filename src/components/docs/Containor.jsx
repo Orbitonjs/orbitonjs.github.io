@@ -12,7 +12,6 @@ import { SIDEBAROBJS } from "./sidebar"
 
 import Logo from "../../../static/favicon.svg"
 
-
 export class Container extends Component {
   constructor(props, context) {
     super(props, context);
@@ -110,30 +109,31 @@ class SidebarItem extends Component {
   render() {
     const { props } = this
     const pathname = location.pathname
-    return (<li className={styles.sideBarItem}>
-      {props.href ? <a href={props.href} className={styles.sideBarButton}>
-        <span className={styles.sideBarIcon}>{props.icon}</span>{props.name}
-      </a> : <button onClick={this.open} className={styles.sideBarButton}>
-        <span className={styles.sideBarIcon}>{props.icon}</span>{props.name}
-        <Next className={`${styles.nextIcon} ${this.state.on ? styles.ison : ""} `} />
-      </button>}
-      {this.state.on ? <div className={styles.dropdownList}>
-        <div className={styles.flex}>
-          <div className={styles.overul}>
-            <ul className={styles.ul}>
-              {props.dropdownList.map((item) => {
-                return (
-                  <li className={`${styles.li} ${pathname + location.hash === item.href ? styles.activeLink : ""}`}>
-                    <a href={item.href}>{item.name}</a>
-                  </li>
-                )
-              })}
-            </ul>
+    return (
+      <li className={styles.sideBarItem}>
+        {props.href ? <a href={props.href} className={styles.sideBarButton}>
+          <span className={styles.sideBarIcon}>{props.icon}</span>{props.name}
+        </a> : <button onClick={this.open} className={styles.sideBarButton}>
+          <span className={styles.sideBarIcon}>{props.icon}</span>{props.name}
+          <Next className={`${styles.nextIcon} ${this.state.on ? styles.ison : ""} `} />
+        </button>}
+        {this.state.on ? <div className={styles.dropdownList}>
+          <div className={styles.flex}>
+            <div className={styles.overul}>
+              <ul className={styles.ul}>
+                {props.dropdownList.map((item) => {
+                  return (
+                    <li className={`${styles.li} ${pathname + location.hash === item.href ? styles.activeLink : ""}`}>
+                      <a href={item.href}>{item.name}</a>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           </div>
-        </div>
 
-      </div> : <span></span>}
-      <hr className={styles.hr} />
-    </li>)
+        </div> : <span></span>}
+        <hr className={styles.hr} />
+      </li>)
   }
 }

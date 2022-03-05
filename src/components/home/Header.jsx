@@ -21,7 +21,7 @@ export class Header extends Component {
                   <p className={styles.p}>Orbiton JS is a lightweight minimilistic JavaScript library for creating browser UIs. Orbiton JS provides your with an ease to use API for creating fast, painless apps with a high performance</p>
                   <div>
                     <a className={styles.a} href="/docs/getting-started/quick-start"><span>Getting Started</span></a>
-                    <a className={styles.adoc} href="/"><span>Documentation</span></a>
+                    <a className={styles.adoc} href="/learn/"><span>Documentation</span></a>
                   </div>
                 </div>
               </div>

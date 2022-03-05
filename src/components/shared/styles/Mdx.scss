@@ -166,8 +166,14 @@ inlineCode {
       }
     }
   }
+  inlineCode {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    background-color: #040113;
+  }
 }
 inlineCode {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #d6d6d6;
+  padding: 2px 4px;
+  border-radius: 5px;
 }
