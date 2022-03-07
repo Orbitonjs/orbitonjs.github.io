@@ -37,7 +37,7 @@ export class DesktopNavBar extends Component {
         <Menu />
 
         <div className={styles.side}>
-          <Search />
+          <div id="docsearch"></div>
           <Icons />
         </div>
       </div>
@@ -192,14 +192,17 @@ class Search extends Component {
 
   render() {
     return (
-      <div className={styles.searchbar}>
-        <div className={styles.searchicon}>
-          <SearchIcon color="#0000ff" />
+      <div>
+        <div className={styles.searchbar}>
+          <div className={styles.searchicon}>
+            <SearchIcon color="#0000ff" />
+          </div>
+          <span>Search...</span>
+          <span className={styles.skeyshort}>
+            Ctrl+k
+          </span>
+
         </div>
-        <span>Search...</span>
-        <span className={styles.skeyshort}>
-          Ctrl+k
-        </span>
 
       </div>
     )

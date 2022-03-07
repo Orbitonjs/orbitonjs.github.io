@@ -35,7 +35,7 @@ export class DesktopNavBar extends Component {
           </a>
         </div>
         <div className={styles.side}>
-          <Search />
+          <div id="docsearch"></div>
           <Icons />
         </div>
 
