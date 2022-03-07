@@ -1,3 +1,1 @@
 /*! @docsearch/js 3.0.0 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
-
-/*! algoliasearch.umd.js | 4.12.2 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
