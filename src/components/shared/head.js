@@ -4,8 +4,6 @@ import docsearch from '@docsearch/js';
 import '@docsearch/css';
 
 
-// For the default version
-import algoliasearch from 'algoliasearch';
 
 
 
@@ -44,8 +42,7 @@ export default class Head extends Component {
         //
       }
     }
-    const client = algoliasearch('27A363TJDY', '7421dd37ad15556c15b538a11d5cddf6');
-    const index = client.initIndex('orbiton-js');
+
     // Docsearch
     try {
 
