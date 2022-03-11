@@ -31,7 +31,7 @@ const Button = Orbiton.createElement('button', {
 
 Orbiton.append(Button, document.getElementById('root'))
 ```
-
+[![Edit orbiton-app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/orbitonjs/template/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
 <Button></Button>
 
 ### Using HTM or JSX.

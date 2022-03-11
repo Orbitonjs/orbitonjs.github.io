@@ -36,6 +36,6 @@ code .
 # Starting the development server
 npm run start
 ```
-
+[![Edit orbiton-app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/orbitonjs/template/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
 ## Conclusion
 If you want a detailed explanation on installing Orbiton then visit the [Installation Guide](./installation)

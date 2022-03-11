@@ -63,10 +63,10 @@ class Menu extends Component {
             </div>
           </div>
           <div>
-            <a className={styles.menuitem} href="/">Blog</a>
+            <a className={styles.menuitem} href="/blog">Blog</a>
           </div>
           <div>
-            <a className={styles.menuitem} href="/">About</a>
+            <a className={styles.menuitem} href="https://orbiton.threadless.com/" target="_blank">Shop</a>
           </div>
         </div>
       </div>
@@ -255,23 +255,23 @@ class MobileDropDown extends Component {
           </div>
         </a>
         <hr className={styles.hr} />
-        <div className={styles.popupitem}>
+        <a href="https://orbiton.threadless.com/" className={styles.popupitem}>
           <div className={styles.docsicon}>
-            <Eye />
+            <Code />
           </div>
           <div>
-            <h4>About</h4>
+            <h4>Shop</h4>
           </div>
-        </div>
+        </a>
         <hr className={styles.hr} />
-        <div className={styles.popupitem}>
+        <a href="/blog" className={styles.popupitem}>
           <div className={styles.docsicon}>
             <Templates />
           </div>
           <div>
             <h4>Blog</h4>
           </div>
-        </div>
+        </a>
         <hr className={styles.hr} />
 
       </div>
