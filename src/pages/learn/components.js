@@ -5,7 +5,7 @@ import Docs from "../../learn/components.md"
 
 const App = <div>
   <Head title="Components And Props | Orbiton JS " />
-  <Container >
+  <Container dir="src/learn/components.md" >
     <Docs />
   </Container>
 </div>

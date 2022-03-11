@@ -5,7 +5,7 @@ import Docs from "../../../docs/API.md"
 
 const App = <div>
   <Head title="Library API Reference | Orbiton JS " />
-  <Container >
+  <Container dir="src/docs/API.md">
     <Docs />
   </Container>
 </div>

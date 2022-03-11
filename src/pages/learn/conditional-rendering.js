@@ -5,7 +5,7 @@ import Docs from "../../learn/conditional-rendering.md"
 
 const App = <div>
   <Head title="Conditional Rendering | Orbiton JS " />
-  <Container >
+  <Container dir="src/learn/conditional-rendering.md" >
     <Docs />
   </Container>
 </div>

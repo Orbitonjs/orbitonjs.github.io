@@ -5,7 +5,7 @@ import Docs from "../../learn/forms.md"
 
 const App = <div>
   <Head title="Forms | Orbiton JS " />
-  <Container >
+  <Container dir="src/learn/forms.md" >
     <Docs />
   </Container>
 </div>

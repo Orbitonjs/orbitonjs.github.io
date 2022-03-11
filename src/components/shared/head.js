@@ -1,9 +1,8 @@
 import Orbiton, { Component } from 'orbiton';
 import docsearch from '@docsearch/js';
-
 import '@docsearch/css';
-
-
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 
 
@@ -42,6 +41,19 @@ export default class Head extends Component {
         //
       }
     }
+    const firebaseConfig = {
+      apiKey: "AIzaSyD-PqkHwSh15mqNYM73Sec1qwpsp2RPXYM",
+      authDomain: "orbiton-js.firebaseapp.com",
+      projectId: "orbiton-js",
+      storageBucket: "orbiton-js.appspot.com",
+      messagingSenderId: "773954526161",
+      appId: "1:773954526161:web:c8b6805df789336fd3def0",
+      measurementId: "G-GMEFG4CGLT"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
 
     // Docsearch
     try {

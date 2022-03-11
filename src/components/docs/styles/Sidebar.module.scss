@@ -229,8 +229,8 @@
     flex-shrink: 0;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     font-size: 1.25rem;
-    color: #007fff;
   }
+  color: #007fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -399,5 +399,33 @@ body[tocOn] {
   }
   .toggletoc2 {
     transform: rotate(-45deg) translateY(-5px);
+  }
+}
+
+.editOnGithub {
+  color: aqua;
+  display: flex;
+  a {
+    padding: 10px 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #0080ff48;
+    margin-left: auto;
+    color: blue;
+    border-radius: 4px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #0080ff27;
+      box-shadow: #01062060 1px 1px 3px;
+    }
+  }
+}
+
+@include darkTheme {
+  .editOnGithub {
+    a {
+      color: aqua;
+    }
   }
 }

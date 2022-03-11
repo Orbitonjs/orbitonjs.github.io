@@ -5,7 +5,7 @@ import Docs from "../../learn/events-and-attributes.md"
 
 const App = <div>
   <Head title="Events and Attributes | Orbiton JS " />
-  <Container >
+  <Container dir="src/learn/events-and-attributes.md" >
     <Docs />
   </Container>
 </div>

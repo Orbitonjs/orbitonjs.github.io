@@ -1,5 +1,5 @@
 import Orbiton, { Component } from "orbiton"
-import { Github, SearchIcon, NightIcon, DayIcon, Docs, Code, Pencil, Book, Eye, Templates, MenuIcon } from "../shared/Icons.jsx"
+import { Github, Busket, SearchIcon, NightIcon, DayIcon, Docs, Code, Pencil, Book, Eye, Templates, MenuIcon } from "../shared/Icons.jsx"
 import * as styles from "./styles/NavBar.module.scss"
 import Logo from "../../../static/favicon.svg"
 
@@ -257,7 +257,7 @@ class MobileDropDown extends Component {
         <hr className={styles.hr} />
         <a href="https://orbiton.threadless.com/" className={styles.popupitem}>
           <div className={styles.docsicon}>
-            <Code />
+            <Busket />
           </div>
           <div>
             <h4>Shop</h4>

@@ -5,7 +5,7 @@ import Docs from "../../../docs/how-to-guides/jsx_in_orbiton.md"
 
 const App = <div>
   <Head title="JSX in Orbiton | Orbiton JS " />
-  <Container >
+  <Container dir="src/docs/how-to-guides/jsx_in_orbiton.md" >
     <Docs />
   </Container>
 </div>

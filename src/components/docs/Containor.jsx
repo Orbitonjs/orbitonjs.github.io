@@ -7,7 +7,7 @@ import "./styles/global.scss"
 import "../shared/styles/Mdx.scss"
 import "../shared/styles/code.scss"
 import "../shared/styles/global.scss"
-import { Next } from "../shared/Icons.jsx";
+import { Next, Pencil } from "../shared/Icons.jsx";
 import { SIDEBAROBJS } from "./sidebar"
 
 import Logo from "../../../static/favicon.svg"
@@ -26,6 +26,9 @@ export class Container extends Component {
           <main className={styles.mdx}>
             {this.props.children}
           </main>
+          <div className={styles.editOnGithub}>
+            <a href={`https://github.com/Orbitonjs/orbitonjs.github.io/blob/main/${this.props.dir}`}><Pencil /> Edit this Page on GitHub</a>
+          </div>
           <Connect />
           <Footer />
         </section>

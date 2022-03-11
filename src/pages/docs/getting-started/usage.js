@@ -5,7 +5,7 @@ import Docs from "../../../docs/getting-started/usage.md"
 
 const App = <div>
   <Head title="Usage | Orbiton JS " />
-  <Container >
+  <Container dir="src/docs/getting-started/usage.md">
     <Docs />
   </Container>
 </div>

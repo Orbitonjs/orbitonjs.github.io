@@ -5,7 +5,7 @@ import Docs from "../../learn/state-management.md"
 
 const App = <div>
   <Head title="State Management | Orbiton JS " />
-  <Container >
+  <Container dir="src/learn/state-management.md" >
     <Docs />
   </Container>
 </div>

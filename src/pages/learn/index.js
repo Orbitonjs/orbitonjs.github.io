@@ -5,7 +5,7 @@ import Docs from "../../learn/index.md"
 
 const App = <div>
   <Head title="The Orbiton JS Tutorial | Orbiton JS " />
-  <Container >
+  <Container dir="src/learn/index.md">
     <Docs />
   </Container>
 </div>

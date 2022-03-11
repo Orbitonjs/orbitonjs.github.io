@@ -132,23 +132,7 @@
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 10px;
-  svg {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    fill: currentColor;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    -o-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    -moz-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    font-size: 1.25rem;
+  span {
     color: #007fff;
   }
 }
