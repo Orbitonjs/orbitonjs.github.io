@@ -31,14 +31,16 @@ const Button = Orbiton.createElement('button', {
 
 Orbiton.append(Button, document.getElementById('root'))
 ```
+
 [![Edit orbiton-app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/orbitonjs/template/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
 <Button></Button>
 
-### Using HTM or JSX.
+### Using HTM or JSX
 
 [HTM](#) is a library that helps yu to write JSX like sytanx and it compiles it in the browser. [JSX](https://reactjs.org/docs/introducing-jsx.html) is a syntax that was developed by the React team to make building React Applications easier. The Orbiton team decided to use these tools since they are widely supported in the JavaScript ecosystem and this would make developing easy.
 
 __Example in JSX__
+
 ```jsx
 const Button = <button onClick={() => { alert('Clicked') } } >Click me</button>
 
@@ -46,6 +48,7 @@ Orbiton.append(Button, document.getElementById('root'))
 ```
 
 __Example in HTM__
+
 ```jsx
 
 const Button = html`<button onClick={() => {

@@ -1,14 +1,16 @@
-# The Orbiton JS Tutorial
-Welcome to the official Orbiton JS tutorial. In this tutorial you will learn how to develop applications in Orbiton JS. This tutorial will give you a solid grasp of Orbiton JS and make you ready to enter the world of Frontend development with Orbiton.
+# Main Concepts
 
-## Prequisites
-This tutorial assumes that you have a sollid or basic grasp of the following. Or have carried out the following tasks
-- Basic Knowledge of HTML and CSS
-- Knowledge in Javascript
+A detailed guide through the mmain and commonly used concepts in Orbiton. This is not a tutorial on Orbiton but instead assumes your have some understanding on Orbiton or have finished the Official Orbion Tutorial.
 
-If you want to learn any of the above technologies you can visit the [MDN Documentation](https://developer.mozilla.org).
+## Sections
 
-## Getting started
-If you have knowledge in the above you can setup a new project or if you dont know how the visit the [Quick Start Guide](/docs/getting-started/quick-start) to learn how to get started with Orbiton.
+This is a list of the concepts we will explore:
 
-If you are ready then lets get into it. Move to the next section 
+- [The Orbiton Element](/learn/creating-an-element.js)
+- [Attributes, Styles and Events](/learn/events-and-attributes.js)
+- [Components and Props](/learn/components.js)
+- [State Managment](/learn/state-management.js)
+- [Conditional Rendering](/learn/conditional-rendering.js)
+
+
+If you are ready then lets get into it. Move to the [next section](/learn/creating-an-element.js)

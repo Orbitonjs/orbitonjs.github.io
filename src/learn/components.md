@@ -1,25 +1,31 @@
 # Components And Props
+
 ## Components
+
 Components are one if the building blocks of every Orbiton JS application. The make it possible for a developer to reuse code and create largescale apps. Think of how your write a function once and can be able to reuse it in different areas in your code without rewriting the whole function logic. That is how components work. Components helps in quite a lot of ways, they help in reusing code, code splitting and even clustering your application.
 Let us get into an Example that might help you understand components well.
 Imagine if you were the engineer building an Instagram clone. In the Application you will have an avatar for the user. But this avatar appears in may areas of the application. And it contains the following:
 
--	A user profile picture
--	The user name.
+- A user profile picture
+- The user name.
 
 Your avatar code might look something like this.
+
 ```html
 <div>
   <img src=”https://yourdomain.com/path/to/image” />
   <span> Username</span>
 </div>
 ```
+
 You can choose to add the above code to your app in two ways:
--	Copy and paste it everywhere the avatar will be.
--	Create a component and use that component each time you need it.
+
+- Copy and paste it everywhere the avatar will be.
+- Create a component and use that component each time you need it.
 
 The first method gets tiresome the code you want to reuse scales up and this makes your code hard. To read.
 The second method works like this.
+
 ```jsx
 // create the Avatar once
 const Avatar = <div>
@@ -27,28 +33,33 @@ const Avatar = <div>
   <span> Username</span>
 </div>
 // just reuse it anywhere you need it
-<Avatar />	
+<Avatar /> 
 ```
+
 The example used might seem small but as your application, scales up you will see the importance of components.
 Now that you have the basic knowledge on Components, let us look at the types of components.
 
 ## Types of components
+
 There are three groups of components in Orbiton.
--	Variable components
--	Functional Components
--	Class Components
+
+- Variable components
+- Functional Components
+- Class Components
 
 As you can guess from the names. Variables, functions and classes respectively create them. Variable components are just normal variables just like what we used in the above example.
 Functional and Class components and more advanced compared to variable components and this brings use to props.
 
 ## Props
+
 As we explained above on how components were like functions. Props also act like parameters. They are actually parameters passed into components. As we said, functions help you to reuse code. However, in some instances you want to use the same function logic but on different pieces of data, so you pass in the data to the function as parameters. So even in components you want to render components with the same structure but with different data.
 
 Take an example of the Instagram clone we were talking of. Imagine you are creating the feed page, on the feed page there are posts. Each post has the following piece of data:
--	An image
--	A like button
--	A caption
--	Number of likes.
+
+- An image
+- A like button
+- A caption
+- Number of likes.
 
 The information above has to be dynamic for each post so you cannot use a variable component as we used in the Avatar example. In this case, we shall need to introduce the use of props and functional components.
 
@@ -71,6 +82,7 @@ function Post() {
 The above is a functional component with the layout of our Post and we have added some placeholder content so let us introduce props and make it dynamic.
 
 First lets imagine you are fetching the posts from an API and it returns an Array of post objects with this structure:
+
 ```js
 {
   image: "https://domain.com/path/to/img",
@@ -80,6 +92,7 @@ First lets imagine you are fetching the posts from an API and it returns an Arra
 ```
 
 ### Making component dynamic
+
 Let us make the component render content based on props.
 
 ```jsx
@@ -116,8 +129,8 @@ As you can see, the usage of props makes it easy to render elements dynamically.
 For now, that is it. We shall look at class components in the next section when learning about state management and data binding.
 
 ## The createComponent function
-So far we have learnt how to create components and we have used them in JSX but we haven’t learnt how to add the to an Orbiton tree of elements or how the JSX compiler differentiates components from elements in JSX.
 
+So far we have learnt how to create components and we have used them in JSX but we haven’t learnt how to add the to an Orbiton tree of elements or how the JSX compiler differentiates components from elements in JSX.
 
 ### Using the `createComponent`
 

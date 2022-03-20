@@ -27,7 +27,7 @@ export class Container extends Component {
             {this.props.children}
           </main>
           <div className={styles.editOnGithub}>
-            <a href={`https://github.com/Orbitonjs/orbitonjs.github.io/blob/main/${this.props.dir}`}><Pencil /> Edit this Page on GitHub</a>
+            <a target="_blank" href={`https://github.com/Orbitonjs/orbitonjs.github.io/blob/main/${this.props.dir}`}><Pencil /> Edit this Page on GitHub</a>
           </div>
           <Connect />
           <Footer />

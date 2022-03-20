@@ -73,43 +73,21 @@ export const SIDEBAROBJS = [
         name: "JSX in Orbiton",
         href: "/docs/how-to-guides/jsx-in-orbiton"
       },
+      {
+        name: "Server Side Rendering",
+        href: "/docs/how-to-guides/server-side-rendering"
+      },
     ]
   },
   {
     name: "API Reference",
     icon: <Icons.Code />,
-    rootPath: "/docs/api-reference",
-    dropdownList: [
-      {
-        name: "append",
-        href: "/docs/api-reference#append"
-      },
-      {
-        name: "createElement",
-        href: "/docs/api-reference#createElement"
-      },
-      {
-        name: "createComponent",
-        href: "/docs/api-reference#createComponent"
-      },
-      {
-        name: "LogicalComponent",
-        href: "/docs/api-reference#LogicalComponent"
-      },
-      {
-        name: "withComponent",
-        href: "/docs/api-reference#withComponent"
-      },
-      {
-        name: "render",
-        href: "/docs/api-reference#render"
-      },
-    ]
+    href: "/docs/api-reference",
   },
   {
     name: "Blog",
     icon: <Icons.Templates />,
-    href: "https://orbitonjs.medium.com"
+    href: "/Blog"
   }
 ]
 

@@ -13,6 +13,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <nav className={styles.navbar}>
+        <p className={styles.importantNote} ><span>Orbiton JS and its documentation are still in development mode. If you are willing you can contribute to the development of this project on github</span><button>x</button></p>
         <DesktopNavBar toggleTheme={this.props.toggleTheme} />
       </nav>
     )

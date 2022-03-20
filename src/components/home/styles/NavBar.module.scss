@@ -326,3 +326,24 @@
     }
   }
 }
+
+.important-note {
+  margin: 0px;
+  display: flex;
+  background: rgba(1, 1, 153, 0.733);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3px 3px 3px 5px;
+  button {
+    background-color: transparent;
+    margin-left: auto;
+    color: #cac9c9;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
