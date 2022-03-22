@@ -1,11 +1,11 @@
 import Orbiton from "orbiton"
 import { Container } from "../../../components/docs/Containor.jsx"
 import Head from "../../../components/shared/head"
-import Docs from "../../../docs/how-to-guides/ssr.md"
+import Docs from "../../../docs/advanced/orbiton-server.md"
 
 const App = <div>
-  <Head title="Server Side Rendering | Orbiton JS " />
-  <Container dir="src/docs/how-to-guides/ssr.md" >
+  <Head title="Orbiton Server | Orbiton JS " />
+  <Container dir="src/docs/advanced/orbiton-server.md" >
     <Docs />
   </Container>
 </div>

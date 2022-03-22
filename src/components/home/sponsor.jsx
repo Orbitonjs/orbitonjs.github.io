@@ -27,7 +27,7 @@ export class SponsorShip extends Component {
             {sponsorsArray.map((i) => <Sponsor img={i.img} href={i.href} name={i.name} description={i.description} />)}
             <div className={styles.gridItem}>
               <div className={styles.link}>
-                <a href="https://www.patreon.com/jimjunior" className={styles.icon}>
+                <a href="https://www.patreon.com/jimjunior" target="_blank" className={styles.icon}>
                   <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 24 24"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg>
                 </a>
                 <div>
@@ -54,7 +54,7 @@ class Sponsor extends Component {
   render() {
     return (
       <div className={`${styles.gridItem} `}>
-        <a className={`${styles.link} ${styles.sponsoritem}`} href={`${this.props.href}/?utm_source=Orbiton.JS&utm_medium=referral&utm_content=homepage`} target="_blank">
+        <a className={`${styles.link} ${styles.sponsoritem}`} href={`${this.props.href}/?utm_source=orbiton.js.org&utm_medium=referral&utm_content=homepage`} target="_blank">
           <div className={styles.img}>
             <img src={`${this.props.img}`} />
           </div>

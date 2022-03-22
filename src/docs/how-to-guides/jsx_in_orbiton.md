@@ -49,12 +49,14 @@ In most frameworks that use JSX. A few or none use namespaced JSX and sometiomes
 
 ```jsx
 ...
-const App = <div:AttachedComp className="root" props={{parent: "div"}}>
+const App = (
+  <div:AttachedComp className="root" props={{parent: "div"}}>
   <h1>Hello</h1>
-</div:AttachedComp>
+  </div:AttachedComp>
+)
 ```
 
-Note the weird XML syntax `<div:AttachedComp>` in the code, thats namespaced JSX. You can visit the page about [Attached Components]() to Know more about how it works.
+Note the weird XML syntax `<div:AttachedComp>` in the code, thats namespaced JSX. You can visit the page about [Logical Components]() to Know more about how it works.
 
 Due to conflicts with some normal XML syntax like svg in HTML you can disaple this feature form being used in the plugin by using the `thrownamespaces` option and setting it to true.
 

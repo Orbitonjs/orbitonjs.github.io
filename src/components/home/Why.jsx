@@ -32,7 +32,7 @@ export class Grid extends Component {
               <System />
               <h3 className={styles.h3}>Light Weight</h3>
             </div>
-            <p className={styles.p}>One of the greatest advantage of Orbiton is that its lightweight compared to other libraries like React. Orbiton is just 6kb - 10kb compared to other libraries that are around 100kb+.</p>
+            <p className={styles.p}>One of the greatest advantage of Orbiton is its size. Orbiton is just 3.8kb min+gzip. This makes your apps load faster size most of the chunk will be code you wrote or code from external libraries since orbiton will only take a small portion of yourapp size</p>
           </div>
         </div>
         <div className={styles.griditem}>
@@ -41,7 +41,7 @@ export class Grid extends Component {
               <TreeTwo />
               <h3 className={styles.h3}>Close To Dom</h3>
             </div>
-            <p className={styles.p}>This is another advantage of Orbiton. Being close to the Dom means that the library will not have to carry out many functions in order to update the Dom making the app feel fast for the user.</p>
+            <p className={styles.p}>Orbiton DOM rendere tries to stay close tothe DOM inorder to mantain a great performance. This makes Orbiton Applications performant and as fast as vanilla js Apps</p>
           </div>
         </div>
         <div className={styles.griditem}>
@@ -59,7 +59,7 @@ export class Grid extends Component {
               <Devices />
               <h3 className={styles.h3}>Modern</h3>
             </div>
-            <p className={styles.p}>Orbiton JS is among the youngest libraries and so it utilizes modern JavaScript removing legacy code from your apps. Most modern browsers like chrome recommend this.</p>
+            <p className={styles.p}>Orbiton JS provides modern APIs that are easy to understand and make you develop scalable and limitless Applications.</p>
           </div>
         </div>
 

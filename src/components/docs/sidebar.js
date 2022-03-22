@@ -50,19 +50,25 @@ export const SIDEBAROBJS = [
       {
         name: "Conditional Rendering",
         href: "/learn/conditional-rendering"
-      },/*
+      },
+    ]
+  },
+  {
+    name: "Advanced",
+    icon: <Icons.HowTo />,
+    dropdownList: [
       {
-        name: "Lifecycles",
-        href: "/learn/lifecycles"
+        name: "Fragments",
+        href: "/docs/advanced/fragments"
       },
       {
-        name: "Forms",
-        href: "/learn/forms"
+        name: "Hydrating",
+        href: "/docs/advanced/hydrating"
       },
       {
-        name: "What Next",
-        href: "/learn/what-next"
-      }, */
+        name: "Orbiton Server",
+        href: "/docs/advanced/orbiton-server"
+      },
     ]
   },
   {
@@ -76,6 +82,10 @@ export const SIDEBAROBJS = [
       {
         name: "Server Side Rendering",
         href: "/docs/how-to-guides/server-side-rendering"
+      },
+      {
+        name: "Contributing",
+        href: "/docs/how-to-guides/contributing"
       },
     ]
   },
