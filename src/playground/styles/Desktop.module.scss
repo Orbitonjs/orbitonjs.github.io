@@ -1,0 +1,36 @@
+.files {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  padding: 5px 5px;
+  span {
+    font-size: 0.8rem;
+    border-top: 1px #013f3f solid;
+    padding: 3px 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      border-top: 1px #018b8b solid;
+    }
+    &.active {
+      background-color: rgb(14, 13, 13);
+      border-top: 1px aqua solid;
+    }
+  }
+}
+
+.workspace {
+  display: flex;
+  & > div {
+    flex: 1;
+  }
+}
+
+.nav {
+  background-color: #111111;
+  color: white;
+  //position: fixed;
+  //top: 0px;
+  //left: 0px;
+  //right: 0px;
+  padding: 5px 3px;
+}

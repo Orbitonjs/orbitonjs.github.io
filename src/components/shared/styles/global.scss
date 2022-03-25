@@ -23,3 +23,22 @@ svg {
   display: inline-block;
   fill: currentColor;
 }
+
+@font-face {
+  font-family: "Material Icons";
+  font-weight: 400;
+  src: url(../../../../static/MaterialIcons-Regular.ttf);
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  text-transform: none;
+  line-height: 1;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}

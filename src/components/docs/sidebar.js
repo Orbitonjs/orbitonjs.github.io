@@ -55,7 +55,8 @@ export const SIDEBAROBJS = [
   },
   {
     name: "Advanced",
-    icon: <Icons.HowTo />,
+    icon: <Icons.Advanced />,
+    rootPath: "/docs/advanced",
     dropdownList: [
       {
         name: "Fragments",
@@ -74,6 +75,7 @@ export const SIDEBAROBJS = [
   {
     name: "How to Guides",
     icon: <Icons.HowTo />,
+    rootPath: "/docs/how-to-guides",
     dropdownList: [
       {
         name: "JSX in Orbiton",

@@ -1,12 +1,10 @@
 import { resolve, dirname, relative } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyPlugin from "copy-webpack-plugin";
-import fs from 'fs';
-import ImageMinimizerPlugin from "image-minimizer-webpack-plugin";
 import remarkGfm from 'remark-gfm'
 import remarkToc from 'remark-toc'
 import rehypeHighlight from 'rehype-highlight'
-import { getPages } from './utils.mjs'
+import { createSiteMap, getPages } from './utils.mjs'
 import rehypeSlug from 'rehype-slug'
 import toc from "@jsdevtools/rehype-toc"
 
@@ -26,6 +24,8 @@ pages.map((page) => {
   entry[pageName] = `./${page}`;
 })
 
+let sitemap = createSiteMap(HTMLPages)
+
 
 export const config = {
   entry,
@@ -33,6 +33,13 @@ export const config = {
     filename: '[name].js',
     path: resolve(dirname('.'), 'build'),
     clean: true,
+  },
+  resolve: {
+    fallback: {
+      path: false,
+      assert: false,
+      fs: false
+    }
   },
   module: {
     rules: [
@@ -92,6 +99,13 @@ export const config = {
     new CopyPlugin({
       patterns: [
         { from: "static/public", to: "" },
+        {
+          from: "static/sitemap.xml",
+          to: "",
+          transform: (content, _) => {
+            return sitemap
+          }
+        },
       ],
     }),
   ].concat(

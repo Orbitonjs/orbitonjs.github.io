@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 3px 10px;
+}
+
+.window-tiles {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  div {
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 50%;
+    background-color: green;
+  }
+}
+
+.title {
+  background-color: #9998981f;
+  color: #292828;
+  width: 300px;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.refresh {
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  &:hover {
+    background: #9998981f;
+  }
+}

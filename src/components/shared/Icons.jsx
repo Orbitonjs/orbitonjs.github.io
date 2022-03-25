@@ -76,6 +76,10 @@ export const TreeTwo = (props) => <span class="material-icons material-icons-out
   lan
 </span>
 
+export const Advanced = (props) => <span class="material-icons material-icons-outlined">
+  insights
+</span>
+
 export const Devices = (props) => <span class="material-icons material-icons-outlined">
   important_devices
 </span>

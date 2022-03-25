@@ -19,4 +19,24 @@ export function getPages(dir) {
   }
   return pages
 }
+/**
+* @param {Array<string>} pages -
+*/
 
+export function createSiteMap(pages) {
+  let Tag = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"><url><loc>https://orbiton.js.org/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>`
+
+  for (const page of pages) {
+    let pathName
+    const lastWord = page.slice(page.length - 5)
+    if (lastWord === "index") {
+      pathName = page.slice(0, page.length - 5)
+    } else {
+      pathName = page
+    }
+    const url = `<url><loc>https://orbiton.js.org/${pathName}</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>`
+    Tag = Tag + url
+  }
+  Tag = Tag + "</urlset >"
+  return Tag
+}

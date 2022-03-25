@@ -67,7 +67,10 @@ class Menu extends Component {
             <a className={styles.menuitem} href="/blog">Blog</a>
           </div>
           <div>
-            <a className={styles.menuitem} href="https://orbiton.threadless.com/" target="_blank">Shop</a>
+            <a className={styles.menuitem} href="/playground">Playground</a>
+          </div>
+          <div>
+            <a className={styles.menuitem} href="https://orbiton.threadless.com/" target="_blank">T-shirt Shop</a>
           </div>
         </div>
       </div>
