@@ -1,7 +1,10 @@
-let IndexValue = `//Orbiton is Already imported by default. You dont need to import It
-import {ClickMe} from "App.js"
+let IndexValue = `// Orbiton is Already imported by default. You dont need to import It
+import {Button} from "App.js"
 
-console.log("hello")
+// Don't change this root
+const root = document.getElementById("application-root")
+
+Orbiton.append(<Button />, root)
 
 `
 
@@ -9,10 +12,29 @@ console.log("hello")
 
 let AppValue = `
 
-export function ClickMe() {
-  alert("You clicked Me")
+export class Button extends Orbiton.Component {
+  constructor(props, context) {
+    super(props, context)
+    this.state = {
+      count: 0
+    }
+    this.add = this.add.bind(this)
+  }
+  add() {
+    let {count} = this.state
+    this.updateState({
+      count: count + 1
+    })
+  }
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.add}>Add Count</button>
+      </div>
+    )
+  }
 }
-
 
 `
 export const FILES = [

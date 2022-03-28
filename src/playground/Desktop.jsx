@@ -27,7 +27,7 @@ export class Desktop extends Component {
     const files = this.state.files
     files.push({
       name: fileName,
-      id: this.state.files.length + 1,
+      id: this.state.files.length,
       content: ""
     })
     this.updateState({
@@ -152,6 +152,7 @@ class Editor extends Component {
     this.setActiveFile = this.setActiveFile.bind(this)
   }
   setActiveFile(id) {
+    console.log(id, this.props.files)
     this.updateState({
       code: this.props.files[id].content,
       activeFile: id

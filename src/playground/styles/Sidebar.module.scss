@@ -24,3 +24,44 @@
     }
   }
 }
+
+.addfilecover {
+  position: fixed;
+  background-color: #00000070;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 50px;
+  z-index: 10000;
+}
+
+.addfile {
+  background-color: rgb(29, 28, 28);
+  padding: 1rem;
+  width: fit-content;
+  font-size: 0.8rem;
+  input {
+    background-color: #000000;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 0.4rem;
+  }
+  button {
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.cancel {
+  background-color: #ff0000 !important;
+  margin-left: auto;
+}
+
+.buttons {
+  display: flex;
+}
