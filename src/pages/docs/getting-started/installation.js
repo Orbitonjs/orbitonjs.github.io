@@ -1,6 +1,7 @@
 import Orbiton from "orbiton"
 import { Container } from "../../../components/docs/Containor.jsx"
 import Head from "../../../components/shared/head"
+import "../../../components/shared/styles/global.scss"
 import Docs from "../../../docs/getting-started/installation.md"
 
 const App = <div>

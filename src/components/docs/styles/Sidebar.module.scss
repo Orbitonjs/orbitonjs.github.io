@@ -31,7 +31,6 @@
   min-height: 0px;
   height: auto;
   overflow: visible;
-  -webkit-transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .hr {
@@ -97,7 +96,6 @@
 .list {
   list-style: none;
   margin: 0;
-  padding: 0;
   position: relative;
   padding: 0;
 }
@@ -166,7 +164,7 @@
   -moz-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: #20262d;
-  font-size: 0.90625rem;
+  font-size: 0.854rem;
   font-weight: 500;
   margin: 4px 0px;
   padding-left: 2px;
@@ -239,7 +237,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100%;
+  font-size: 0.90625rem;
   margin-right: 12px;
   padding: 4px;
   border-radius: 5px;
@@ -274,16 +272,27 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  min-height: 0px;
+  height: auto;
+  overflow: visible;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overul {
   width: 100%;
+  min-height: 0px;
+  height: auto;
+  overflow: visible;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ul {
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
-  padding: 0;
+  min-height: 0px;
+  height: auto;
+  overflow: visible;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li {
@@ -332,7 +341,7 @@
     transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
       background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     font-size: 0.84375rem;
-    color: #2f3a45;
+    color: #4c4c4d;
     padding-left: 36px;
     @media (min-width: 900px) {
       padding-top: 5px;
@@ -401,28 +410,67 @@ body[tocOn] {
     transform: rotate(-45deg) translateY(-5px);
   }
 }
+::-webkit-scrollbar-corner {
+  background: none;
+}
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgb(165, 165, 165);
+  min-height: 24px;
+}
 .editOnGithub {
   color: aqua;
   display: flex;
   a {
     padding: 10px 5px;
+    font-size: 0.8rem;
     text-decoration: none;
     display: flex;
     align-items: center;
-    background-color: #0080ff48;
     margin-left: auto;
-    color: blue;
+    color: rgb(0, 119, 255);
     border-radius: 4px;
     transition: all 0.3s;
+
+    border: rgba(0, 0, 255, 0) solid 1px;
+    span {
+      margin-left: 5px;
+    }
     &:hover {
-      background-color: #0080ff27;
-      box-shadow: #01062060 1px 1px 3px;
+      border: rgb(0, 132, 255) solid 1px;
+      border-radius: 3px;
     }
   }
 }
 
 @include darkTheme {
+  ::-webkit-scrollbar-corner {
+    background: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgb(107, 107, 107);
+    min-height: 24px;
+    border: 3px solid rgb(43, 43, 43);
+  }
+  ::-webkit-scrollbar-corner,
+  ::-webkit-scrollbar-corner {
+    background-color: rgb(43, 43, 43);
+  }
   .editOnGithub {
     a {
       color: aqua;

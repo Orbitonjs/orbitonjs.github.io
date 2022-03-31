@@ -4,6 +4,7 @@ import Footer from "../index/Footer.js";
 import NavBar from "./DocsNavBar.jsx";
 import * as styles from "./styles/Sidebar.module.scss"
 import "./styles/global.scss"
+import "../shared/styles/global.scss"
 import "../shared/styles/Mdx.scss"
 import "../shared/styles/code.scss"
 import "../shared/styles/global.scss"
@@ -27,7 +28,7 @@ export class Container extends Component {
             {this.props.children}
           </main>
           <div className={styles.editOnGithub}>
-            <a target="_blank" href={`https://github.com/Orbitonjs/orbitonjs.github.io/blob/main/${this.props.dir}`}><Pencil /> Edit this Page on GitHub</a>
+            <a target="_blank" href={`https://github.com/Orbitonjs/orbitonjs.github.io/blob/main/${this.props.dir}`}> Edit this Page on GitHub <Pencil /></a>
           </div>
           <Connect />
           <Footer />

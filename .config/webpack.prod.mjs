@@ -20,5 +20,5 @@ config.plugins.push(
 )
 export default {
   mode: "production",
-  ...config
+  //...config
 }

@@ -2,6 +2,21 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
 wrapper {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  word-break: break-word;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 1.2rem;
+  }
   pre {
     margin: 16px auto;
     padding: 16px;
@@ -23,7 +38,8 @@ wrapper {
   }
   inlineCode {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    background-color: #d6d6d6;
+    color: #1a2027;
+    background-color: rgba(102, 178, 255, 0.15);
   }
 
   ::-webkit-scrollbar-corner {
@@ -69,15 +85,15 @@ wrapper {
     color: #0a1929;
   }
   h2 {
-    font-size: 1.875rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 1.5rem;
     line-height: 1.5;
-    letter-spacing: 0;
-    font-family: "PlusJakartaSans-Bold", -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 0.1px;
+    color: #1a2027;
     font-weight: 700;
-    margin: 40px 0 10px;
-    color: #132f4c;
+    margin: 40px 0 4px;
   }
   h3 {
     font-size: 1.3rem;
@@ -95,15 +111,18 @@ wrapper {
   }
 
   blockquote {
-    padding: 1rem;
-    background: #ffa6009d;
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-left: 8px solid;
+    border-color: #ffdc48;
+    background-color: #fff9eb;
+    padding: 10px 20px;
+    margin: 20px 0;
   }
   p {
     margin-top: 0;
     margin-bottom: 16px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     letter-spacing: 0;
     font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -129,7 +148,8 @@ wrapper {
 }
 inlineCode {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  background-color: #d6d6d6;
+  color: #1a2027;
+  background-color: rgba(102, 178, 255, 0.15);
 }
 
 @include darkTheme {
@@ -154,10 +174,14 @@ inlineCode {
       background-color: #08131f;
     }
     blockquote {
-      padding: 1rem;
-      background: #ffa60081;
-      border-radius: 5px;
-      margin: 10px;
+      border-radius: 10px;
+      border-width: 1px 1px 1px 8px;
+      border-style: solid;
+      border-image: initial;
+      border-color: rgb(222, 165, 0);
+      background-color: rgba(90, 54, 0, 0.2);
+      padding: 10px 20px;
+      margin: 20px 0px;
     }
     a {
       color: #00ffff;
@@ -169,7 +193,8 @@ inlineCode {
   }
   inlineCode {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    background-color: #040113;
+    color: rgb(0, 153, 255);
+    background-color: rgba(102, 178, 255, 0.15);
   }
 }
 inlineCode {

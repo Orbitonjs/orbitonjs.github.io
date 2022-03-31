@@ -1,4 +1,5 @@
 import Orbiton from "orbiton"
+import "../../components/shared/styles/global.scss"
 import { Container } from "../../components/docs/Containor.jsx"
 import Head from "../../components/shared/head"
 import Docs from "../../learn/state-management.md"

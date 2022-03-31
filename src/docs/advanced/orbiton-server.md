@@ -22,7 +22,7 @@ npm install @orbiton/server
 Deno
 
 ```js
-import * as OrbitonServer from "https://jsdeliver.com/"
+import * as OrbitonServer from "https://cdn.jsdelivr.net/npm/@orbiton/server@0.0.2/deno/index.js"
 ```
 
 ## Functions
