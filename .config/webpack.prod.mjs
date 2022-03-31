@@ -1,7 +1,8 @@
-import { getPages } from './utils.mjs'
-import { resolve, dirname, relative } from 'path';
+//import { getPages } from './utils.mjs'
+//import { resolve, dirname, relative } from 'path';
 import { config } from "./webpack.common.mjs";
-import { GenerateSW } from "workbox-webpack-plugin"
+//import { GenerateSW } from "workbox-webpack-plugin"
+/*
 const pages = getPages('./src/pages')
 const HTMLPages = []
 pages.map((page) => {
@@ -17,8 +18,8 @@ config.plugins.push(
     skipWaiting: true,
     chunks: HTMLPages
   })
-)
+) */
 export default {
   mode: "production",
-  //...config
+  ...config
 }
