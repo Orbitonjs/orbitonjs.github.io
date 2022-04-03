@@ -63,10 +63,6 @@ export const SIDEBAROBJS = [
         href: "/docs/advanced/fragments"
       },
       {
-        name: "Hydrating",
-        href: "/docs/advanced/hydrating"
-      },
-      {
         name: "Orbiton Server",
         href: "/docs/advanced/orbiton-server"
       },

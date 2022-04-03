@@ -72,7 +72,7 @@ All your code must be tested so if you are adding a new feature you must write a
 
 For linting Orbiton Uses Eslint.
 
-> Remember before submitting a pull request you must run the following commands and mmak sure you don’t meet any error
+> Remember before submitting a pull request you must run the following commands and make sure you don’t meet any error
 
 ```sh
 yarn run lint
@@ -82,3 +82,12 @@ yarn test
 ---
 
 Incase you update anything that might change the development process please submit a pull request to update the contributing guide on this [repository](https://github.com/Orbitonjs/orbitonjs.github.io)
+
+
+## Contributors
+
+We would like to thank the awesome grooup of people that contribute to the development of Orbiton JS.
+
+<a href="https://github.com/orbitonjs/orbiton/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=orbitonjs/orbiton" />
+</a>

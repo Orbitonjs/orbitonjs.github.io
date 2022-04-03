@@ -22,7 +22,7 @@ export default class Footer extends Component {
             <li><a href="https://github.com/Orbitonjs" target="_blank" rel="noopener noreferrer">Github Org</a></li>
             <li><a href="https://github.com/Orbitonjs/orbiton" target="_blank" rel="noopener noreferrer">Github Repo</a></li>
             <li><a href="https://www.twitter.com/orbitonjs" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="https://github.com/Orbitonjs/orbiton.github.io" target="_blank" rel="noopener noreferrer">Website Repo</a></li>
+            <li><a href="https://github.com/Orbitonjs/orbitonjs.github.io" target="_blank" rel="noopener noreferrer">Website Repo</a></li>
           </ul>
           <ul>
             <li><a href="/playground">Playground</a></li>
