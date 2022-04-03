@@ -3,7 +3,7 @@
 
 The orbiton element is a object that acts as a representation of a given DOM element. An Orbiton element is just a normal javascript object and one can create it manually but its more effecient if you use the `createElement` function provided by Orbiton js.
 
-<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS"></a>
+<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS" /></a>
 
 ## Creating an Orbiton element
 

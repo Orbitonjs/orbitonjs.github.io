@@ -2,7 +2,7 @@
 
 On this page we give you a detailed explanaton to each and everything that Orbiton makes available for your usage. We shall explain to you Functions (and their parameters), classes, variables, class methods, objects and types that are included in the Orbiton JS Library.
 Note that the functions on this page are not ordered in any specific form of ordering so use the search bar on the side of this page to find the specific function that you are looking for. You can also search throught the table of contents to find what your are looking for.
-
+<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS" /></a>
 ## Fuctions
 
 ### `append`
