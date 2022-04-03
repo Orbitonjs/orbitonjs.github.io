@@ -1,5 +1,7 @@
 # Components And Props
 
+<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS"></a>
+
 ## Components
 
 Components are one if the building blocks of every Orbiton JS application. The make it possible for a developer to reuse code and create largescale apps. Think of how your write a function once and can be able to reuse it in different areas in your code without rewriting the whole function logic. That is how components work. Components helps in quite a lot of ways, they help in reusing code, code splitting and even clustering your application.

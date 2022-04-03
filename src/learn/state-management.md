@@ -2,6 +2,7 @@
 
 In Orbiton, state is data that is determines how your app renders. The introduction of state in Applications opens possibilities for more capabilities in your app. To introduce state in an application, you must use Class Components and on this page we shall introduce class based components and how to add a state to a component.
 
+<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS"></a>
 ## Class Components
 
 As you can guess from the name class components are created using classes. Class components introduce more futures to your application like state and lifecycle APIs.

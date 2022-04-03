@@ -2,6 +2,8 @@
 
 It is easy to install Orbiton JS. You can install Orbiton in any environment, whether using Node or in the Browser.
 
+<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS"></a>
+
 ## Adding CDN links.
 
 Orbiton JS prefers usage of [jsDeliver](https://jsdeliver.com) as the default CDN for adding Orbiton to your website. In case you want to quickly, get started in your browser. Add a script tag with the following links.

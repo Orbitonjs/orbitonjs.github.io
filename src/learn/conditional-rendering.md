@@ -2,6 +2,8 @@
 
 Imagine you want to create a button on your site that gives a user an ability to login or log out of his account. You want to do it in a way that if the user in logged in, you render a button with the text login else it renders a button with the text logout.
 
+<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS"></a>
+
 So let us create the two button components
 
 ```jsx
