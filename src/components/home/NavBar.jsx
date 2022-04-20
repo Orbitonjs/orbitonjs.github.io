@@ -7,13 +7,37 @@ import Logo from "../../../static/favicon.svg"
 export default class NavBar extends Component {
   constructor(props, context) {
     super(props, context)
-    this.state = {}
+    this.state = {
+      isOn: false
+    }
+  }
+  Mounted() {
+    if (localStorage.getItem("notificationOn") !== null) {
+      const isOn = localStorage.getItem("notificationOn")
+      if (isOn === "true") {
+        this.updateState({
+          isOn: true
+        })
+      }
+    } else {
+      localStorage.setItem("notificationOn", "true")
+      this.updateState({
+        isOn: true
+      })
+    }
+  }
+  RemoveNotification() {
+    localStorage.setItem("notificationOn", "false")
+    this.updateState({
+      isOn: false
+    })
   }
 
   render() {
     return (
       <nav className={styles.navbar}>
-        <p className={styles.importantNote} ><span>Orbiton JS and its documentation are still in development mode. If you are willing you can contribute to the development of this project on github</span><button>x</button></p>
+        {this.state.isOn ?
+          <p className={styles.importantNote} ><span>Orbiton JS and its documentation are still in development mode. If you are willing you can contribute to the development of this project on github</span><button>x</button></p> : ""}
         <DesktopNavBar toggleTheme={this.props.toggleTheme} />
       </nav>
     )

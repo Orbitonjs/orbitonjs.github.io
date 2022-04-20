@@ -2,7 +2,6 @@
 
 If you want to quickly start with Orbiton JS development without having to worry about installation and tooling then this is the page. On this page we will show your how to get a quick orbiton JS project started.
 
-<a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS" /></a>
 
 ## Requirements
 
