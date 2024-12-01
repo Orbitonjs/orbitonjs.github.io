@@ -23,8 +23,8 @@ class App extends Component {
 }
 ```
 
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
-      data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" dataAdClient="ca-pub-4708563499603847" dataAdSlot="3293369059"
+      dataAdFormat="auto" dataFullWidthResponsive="true"></ins>
 
 ## Props in Class Components
 
@@ -68,8 +68,8 @@ class App extends Component {
 
 After you have initialized state you can then use it.
 
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
-      data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" dataAdClient="ca-pub-4708563499603847" dataAdSlot="3293369059"
+      dataAdFormat="auto" dataFullWidthResponsive="true"></ins>
 
 ## Updating State
 
@@ -100,5 +100,5 @@ class App extends Component {
 In the above component the `updateState` function will update the `loggedIn` property but wont do anything to the `someArray` property.
 
 
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
-      data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" dataAdClient="ca-pub-4708563499603847" dataAdSlot="3293369059"
+      dataAdFormat="auto" dataFullWidthResponsive="true"></ins>
