@@ -41,6 +41,9 @@ const Avatar = <div>
 The example used might seem small but as your application, scales up you will see the importance of components.
 Now that you have the basic knowledge on Components, let us look at the types of components.
 
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+
 ## Types of components
 
 There are three groups of components in Orbiton.
@@ -93,6 +96,9 @@ First lets imagine you are fetching the posts from an API and it returns an Arra
 }
 ```
 
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+
 ### Making component dynamic
 
 Let us make the component render content based on props.
@@ -130,6 +136,9 @@ function Feed() {
 As you can see, the usage of props makes it easy to render elements dynamically. Imagine if the Post Array was like 100 objects in it. We would have been able to render 100 objects using less than 10 lines of code
 For now, that is it. We shall look at class components in the next section when learning about state management and data binding.
 
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+
 ## The createComponent function
 
 So far we have learnt how to create components and we have used them in JSX but we haven’t learnt how to add the to an Orbiton tree of elements or how the JSX compiler differentiates components from elements in JSX.
@@ -147,3 +156,7 @@ const App = createComponent(Component, props);
 ```
 
 > When using JSX, the compiler differentiates a component from an element by the first character of the tag. If the first character is a Camel case latter( capital letter ) it will be transpiled to createComponent else it will be createElement. For example `<Section>` will be created as a `createComponent(Section)` and `<section>` will become `createElement("section")`. So you should always name your components using that convention.
+
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>

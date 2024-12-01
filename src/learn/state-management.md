@@ -3,6 +3,7 @@
 In Orbiton, state is data that is determines how your app renders. The introduction of state in Applications opens possibilities for more capabilities in your app. To introduce state in an application, you must use Class Components and on this page we shall introduce class based components and how to add a state to a component.
 
 <a href="https://www.interserver.net/r/656116"><img src="https://www.interserver.net/logos/WH_728x90.gif.gif" alt="InterServer Web Hosting and VPS" /></a>
+
 ## Class Components
 
 As you can guess from the name class components are created using classes. Class components introduce more futures to your application like state and lifecycle APIs.
@@ -21,6 +22,9 @@ class App extends Component {
   }
 }
 ```
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
 
 ## Props in Class Components
 
@@ -64,6 +68,9 @@ class App extends Component {
 
 After you have initialized state you can then use it.
 
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+
 ## Updating State
 
 You have to not that since state was created to help determine how your app is rendered, certain conventions where put in place on how to update it. So changing a value directly is discouraged. It can work but it defeats the purpose of why state was created.
@@ -91,3 +98,7 @@ class App extends Component {
 ```
 
 In the above component the `updateState` function will update the `loggedIn` property but wont do anything to the `someArray` property.
+
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4708563499603847" data-ad-slot="3293369059"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
