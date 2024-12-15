@@ -37,7 +37,7 @@ export default class NavBar extends Component {
     return (
       <nav className={styles.navbar}>
         {this.state.isOn ?
-          <p className={styles.importantNote} ><span>Orbiton JS and its documentation are still in development mode. If you are willing you can contribute to the development of this project on github</span><button>x</button></p> : ""}
+          <p className={styles.importantNote} ><span>Orbiton JS Archived. It was just a hobby project. Not recommended for production use</span><button>x</button></p> : ""}
         <DesktopNavBar toggleTheme={this.props.toggleTheme} />
       </nav>
     )
